@@ -36,19 +36,19 @@
     "subServices": ["Metallic Wall Finishes", "Furniture Accents", "Decorative Elements"]
   },
   {
-    "slug": "wardrobes",
-    "name": "Wardrobe Spraying",
+    "slug": "garage-door-spraying",
+    "name": "Garage Door Spraying",
     "description": "Give your wardrobes a fresh, modern look with our spraying service.",
     "image": "/images/services/wardrobes.jpg",
     "imageId": "mno345",
-    "subServices": ["Built-in Wardrobes", "Freestanding Wardrobes", "Walk-in Closets"]
+    "subServices": ["Side Door Spraying", "Metal Garage Door Spraying"]
   },
   {
-    "slug": "metal-and-feature-walls",
-    "name": "Metal and Feature Walls",
-    "description": "Create stunning feature walls with our metal and specialty finishes.",
+    "slug": "front-door-spraying",
+    "name": "Front Door Spraying",
+    "description": "Update your front door with our professional spraying service.",
     "image": "/images/services/feature-walls.jpg",
     "imageId": "pqr678",
-    "subServices": ["Metallic Wall Finishes", "Textured Walls", "Accent Walls"]
+    "subServices": ["Back door spraying", "Textured Walls"]
   }
 ]

@@ -1,45 +1,295 @@
 {
-    "slug": "outdoor-furniture-and-spraying",
-    "name": "Outdoor Furniture and Spraying",
-    "description": "Transform your outdoor furniture with our professional spraying service.",
-    "image": "/images/services/kitchen-spraying.jpg",
-    "imageId": "ipcabm48ATw",
-    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"],
-    "locations": [
-      {
-        "slug": "bromley",
-        "title": "Kitchen Spraying Services in Bromley",
-        "introduction": "Transform your Bromley kitchen with our expert spraying services.",
-        "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
-        "whyChooseUs": [
-          "Trusted by Bromley homeowners for over a decade",
-          "Specialized knowledge of local architectural styles",
-          "Eco-friendly paint options suitable for Bromley's climate",
-          "Quick turnaround times to minimize disruption to your home"
-        ],
-        "recentProjects": [],
-        "testimonials": [],
-        "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000.",
-        "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
-        "faq": [],
-        "aboutUs": "Serving Bromley for over 15 years.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying"]
-      },
-      {
-        "slug": "beckenham",
-        "title": "Kitchen Spraying Services in Beckenham",
-        "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
-        "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
-        "whyChooseUs": [
-          "Experienced in Beckenham home styles",
-          "Eco-friendly and durable paint options",
-          "Efficient service with minimal disruption",
-          "Competitive pricing for Beckenham residents"
-        ],
-        "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800.",
-        "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
-        "aboutUs": "With years of experience serving Beckenham.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
-      }
-    ]
-  }
+  "slug": "outdoor-furniture-and-spraying",
+  "name": "Outdoor Furniture Spraying and Refinishing",
+  "description": "Revitalize your outdoor spaces with our expert furniture spraying service - the affordable way to transform your garden furniture.",
+  "image": "https://nsdr.b-cdn.net/Project%20pics/david-hunter-M9gGS4ggbq4-unsplash.jpg",
+  "imageId": "outdoor-furniture-spraying",
+  "subServices": [
+    "Garden Furniture Spraying",
+    "Patio Furniture Refinishing",
+    "Metal Furniture Restoration"
+  ],
+  "introduction": "Breathe new life into your outdoor living areas without the expense of replacing your furniture. Our professional outdoor furniture spraying service offers a cost-effective solution to rejuvenate your garden and patio pieces. Using high-quality, weather-resistant paints and finishes, we transform tired, worn furniture into stunning focal points that withstand the British weather.",
+  "benefits": [
+    {
+      "title": "Affordable Outdoor Furniture Makeover",
+      "description": "Achieve a stunning transformation of your garden furniture at a fraction of the cost of buying new pieces."
+    },
+    {
+      "title": "Enhance Your Outdoor Living Space",
+      "description": "Professionally refinished outdoor furniture can significantly improve the look and feel of your garden or patio area."
+    },
+    {
+      "title": "Weather-Resistant, Long-Lasting Finish",
+      "description": "Our specialized spraying techniques provide a durable, smooth finish that withstands the elements and looks great for years to come."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Local Experts in Outdoor Furniture Refinishing",
+      "description": "Our team of skilled professionals has years of experience in outdoor furniture spraying and refinishing, serving UK homeowners with pride."
+    },
+    {
+      "title": "Premium, Weather-Resistant Materials",
+      "description": "We use top-quality, UV-resistant paints and finishes that are both environmentally friendly and built to withstand the British climate."
+    },
+    {
+      "title": "Convenient On-Site Service",
+      "description": "Our mobile spraying unit allows us to work on your furniture at your home, minimizing disruption and ensuring a perfect match to your outdoor space."
+    },
+    {
+      "title": "100% Satisfaction Guarantee",
+      "description": "We stand behind our work with a comprehensive warranty and a commitment to your complete satisfaction."
+    }
+  ],
+  "process": [
+    "Step 1: Thorough cleaning and preparation of all surfaces to ensure optimal paint adhesion.",
+    "Step 2: Application of high-quality, weather-resistant paint or finish using state-of-the-art spraying equipment for a flawless result.",
+    "Step 3: Meticulous inspection and touch-ups to guarantee a perfect finish that meets our rigorous quality standards."
+  ],
+  "materialsAndFinishes": [
+    {
+      "title": "Premium Outdoor Paints",
+      "description": "We offer a wide range of high-quality, weather-resistant paints, including specialized coatings for metal, wood, and plastic furniture."
+    },
+    {
+      "title": "Innovative Rust Protection",
+      "description": "Our advanced rust-proofing techniques can protect and restore metal furniture, extending its life and beauty."
+    },
+    {
+      "title": "UV-Resistant Finishes",
+      "description": "We use specialized UV-resistant finishes to protect your furniture from fading and sun damage, ensuring long-lasting color and beauty."
+    }
+  ],
+  "beforeAfterGallery": [
+    {
+      "before": "",
+      "after": "",
+      "description": "Stunning transformation of a weathered teak garden set in [Local Area]: From faded and grey to vibrant and protected."
+    },
+    {
+      "before": "",
+      "after": "",
+      "description": "Complete makeover of rusty metal patio furniture in [Another Local Area]: Restored to a sleek, modern finish that will last for years."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does your outdoor furniture spraying process take?",
+      "answer": "Our efficient process typically takes 1-2 days for an average garden furniture set. We work diligently to minimize disruption while ensuring a high-quality finish."
+    },
+    {
+      "question": "Can you match my desired colour scheme for my outdoor furniture?",
+      "answer": "Absolutely! Our colour matching expertise allows us to recreate any shade you desire or match existing elements in your outdoor space for a cohesive look."
+    },
+    {
+      "question": "What kind of warranty do you offer on your outdoor furniture refinishing services?",
+      "answer": "We stand behind our work with a comprehensive 3-year warranty on all our outdoor furniture spraying and refinishing services, giving you peace of mind in your investment."
+    },
+    {
+      "question": "How should I prepare my outdoor furniture for the refinishing project?",
+      "answer": "We'll provide you with a detailed checklist, but generally, you'll need to clear the area around the furniture. Our team will handle all the necessary cleaning and preparation of the pieces."
+    }
+  ],
+  "elementsWeSpray": [
+    {
+      "element": "Garden Tables and Chairs",
+      "description": "Transform your outdoor dining set with our expert spraying service, achieving a smooth, durable finish that looks brand new and withstands the elements."
+    },
+    {
+      "element": "Patio Sofas and Loungers",
+      "description": "Our innovative refinishing techniques can update metal, wood, or rattan patio furniture, giving your relaxation area a fresh, stylish look."
+    },
+    {
+      "element": "Garden Benches and Swings",
+      "description": "Revitalize your garden seating with our specialized painting service, making old benches and swings look brand new and perfectly coordinated with your outdoor decor."
+    },
+    {
+      "element": "Planters and Garden Accessories",
+      "description": "We meticulously refinish planters, trellises, and other garden accessories to create a cohesive, beautifully finished outdoor space."
+    }
+  ],
+  "professionalBenefits": [
+    {
+      "benefit": "Expert Colour Consultation",
+      "description": "Our professional colour experts will help you choose the perfect palette to achieve your dream outdoor space, whether you're looking to match existing elements or create a whole new look."
+    },
+    {
+      "benefit": "Flawless, Factory-Like Finish",
+      "description": "Our advanced spraying techniques and equipment ensure a smooth, even finish free of brush strokes or imperfections, rivaling the look of brand-new furniture."
+    },
+    {
+      "benefit": "Comprehensive Project Management",
+      "description": "From initial consultation to final inspection, we handle every aspect of your outdoor furniture transformation, ensuring a stress-free experience and stunning results."
+    }
+  ],
+  "maintenanceAndCare": {
+    "description": "To preserve your newly refinished outdoor furniture, we recommend covering it during harsh weather and cleaning it regularly with gentle, non-abrasive cleaners. With proper care, your furniture's new finish will maintain its beauty and durability for many years to come.",
+    "longevity": "Our professional-grade finishes are designed to last. With proper maintenance, you can expect your refinished outdoor furniture to look great for 3-5 years or more, depending on exposure to the elements."
+  },
+  "customerTestimonials": [
+    {
+      "quote": "The work was fast and efficient. All aspects of the job were catered for and completed with professionalism",
+      "author": "Mr Mark Scott, Bromley"
+    },
+    {
+      "quote": "We would have no hesitation in highly recommending Coutts Building . We would also be happy for anyone to come and look at the work they have done for us.",
+      "author": "J Lane, Croydon"
+    }
+  ],
+  "pricingInfo": "For our professional outdoor furniture spraying and refinishing services, please request a quote. While prices may vary based on the scope of work and materials used, we pride ourselves on offering premium results at a fraction of the cost of buying new furniture. We also offer flexible payment options to make your outdoor furniture makeover more accessible.",
+  "environmentalCommitment": {
+    "ecoFriendlyOptions": "We're committed to environmental responsibility, offering a selection of low-VOC and eco-friendly paint options that are safe for your garden and the planet.",
+    "wasteReduction": "Our refinishing process significantly reduces landfill waste compared to replacing furniture. We also practice strict waste reduction, recycling unused materials and properly disposing of any hazardous substances."
+  },
+  "locations": [
+    {
+      "slug": "bromley",
+      "name": "Bromley",
+      "title": "Outdoor Furniture Spraying Services in Bromley",
+      "introduction": "Transform your Bromley garden with our expert outdoor furniture spraying services. Our skilled team brings years of experience and cutting-edge techniques to breathe new life into your outdoor spaces. Whether you're looking to update a tired patio set or completely reinvent your garden furniture, our professional spraying solutions offer a cost-effective and stunning alternative to buying new. We pride ourselves on delivering exceptional results that will make your Bromley outdoor area the envy of the neighborhood.",
+      "localizedDescription": "In Bromley, we specialize in updating outdoor furniture for both modern homes and period properties, ensuring your garden complements your home's unique character.",
+      "description": "Serving the Bromley area with top-quality spraying services."
+    },
+    {
+      "slug": "beckenham",
+      "name": "Beckenham",
+      "title": "Outdoor Furniture Spraying Services in Beckenham",
+      "introduction": "Revitalize your Beckenham outdoor living spaces with our professional furniture spraying solutions. Our expert team combines local knowledge with industry-leading techniques to transform your garden and patio furniture. From quaint cottage gardens to modern urban balconies, we offer tailored services to suit every Beckenham home.",
+      "localizedDescription": "Our Beckenham service caters to a diverse range of outdoor styles, from traditional English gardens to contemporary outdoor living areas."
+    },
+    {
+      "slug": "croydon",
+      "name": "Croydon",
+      "title": "Outdoor Furniture Spraying Services in Croydon",
+      "introduction": "Elevate your Croydon outdoor spaces with our professional furniture spraying solutions. Our experienced team brings innovative techniques and local expertise to every project, ensuring stunning results that reflect the diverse character of Croydon homes and gardens.",
+      "localizedDescription": "In Croydon, we excel in refreshing outdoor furniture for a wide range of properties, from Victorian terraces with compact gardens to modern homes with expansive patios."
+    },
+    {
+      "slug": "orpington",
+      "name": "Orpington",
+      "title": "Outdoor Furniture Spraying Services in Orpington",
+      "introduction": "Transform your Orpington garden with our expert outdoor furniture spraying services. We combine local knowledge with cutting-edge techniques to breathe new life into garden and patio furniture across Orpington, offering a cost-effective alternative to buying new.",
+      "localizedDescription": "Our Orpington service caters to a wide range of outdoor styles, from traditional country gardens to contemporary outdoor living spaces."
+    },
+    {
+      "slug": "hayes",
+      "name": "Hayes",
+      "title": "Outdoor Furniture Spraying Services in Hayes",
+      "introduction": "Revitalize your Hayes outdoor living areas with our professional furniture spraying solutions. Our team brings years of experience and local insight to every project, ensuring exceptional results that complement the unique character of Hayes homes and gardens.",
+      "localizedDescription": "In Hayes, we specialize in updating outdoor furniture for both classic and contemporary garden designs, tailored to local preferences."
+    },
+    {
+      "slug": "penge",
+      "name": "Penge",
+      "title": "Outdoor Furniture Spraying Services in Penge",
+      "introduction": "Transform your Penge outdoor spaces with our expert furniture spraying services. We offer bespoke solutions that cater to the diverse styles found in Penge, from Victorian terraces with charming gardens to modern builds with sleek patios.",
+      "localizedDescription": "Our Penge service excels in refreshing outdoor furniture of all sizes, bringing new life to spaces both large and compact."
+    },
+    {
+      "slug": "sydenham",
+      "name": "Sydenham",
+      "title": "Outdoor Furniture Spraying Services in Sydenham",
+      "introduction": "Elevate your Sydenham outdoor living areas with our professional furniture spraying solutions. Our team combines local expertise with industry-leading techniques to deliver stunning transformations across Sydenham's diverse range of gardens and patios.",
+      "localizedDescription": "In Sydenham, we cater to the area's mix of period properties and newer homes, offering tailored solutions for every outdoor furniture style."
+    },
+    {
+      "slug": "crystal-palace",
+      "name": "Crystal Palace",
+      "title": "Outdoor Furniture Spraying Services in Crystal Palace",
+      "introduction": "Revitalize your Crystal Palace outdoor spaces with our expert furniture spraying services. We bring a blend of creativity and precision to every project, reflecting the unique character of Crystal Palace homes and their outdoor areas.",
+      "localizedDescription": "Our Crystal Palace service specializes in updating outdoor furniture for both Victorian-era properties with traditional gardens and modern apartments with urban balconies."
+    },
+    {
+      "slug": "south-norwood",
+      "name": "South Norwood",
+      "title": "Outdoor Furniture Spraying Services in South Norwood",
+      "introduction": "Transform your South Norwood outdoor living spaces with our professional furniture spraying solutions. Our team offers tailored services that respect the area's rich architectural heritage while delivering modern, stylish results for your garden furniture.",
+      "localizedDescription": "In South Norwood, we excel in refreshing outdoor furniture for a variety of property types, from terraced houses with cozy gardens to new-build homes with spacious patios."
+    },
+    {
+      "slug": "elmers-end",
+      "name": "Elmers End",
+      "title": "Outdoor Furniture Spraying Services in Elmers End",
+      "introduction": "Elevate your Elmers End outdoor spaces with our expert furniture spraying services. We combine local knowledge with cutting-edge techniques to deliver stunning transformations that enhance the charm of Elmers End homes and gardens.",
+      "localizedDescription": "Our Elmers End service caters to a diverse range of outdoor styles, offering bespoke solutions for both traditional and contemporary garden furniture."
+    },
+    {
+      "slug": "chislehurst",
+      "name": "Chislehurst",
+      "title": "Outdoor Furniture Spraying Services in Chislehurst",
+      "introduction": "Revitalize your Chislehurst outdoor living areas with our professional furniture spraying solutions. Our team brings a wealth of experience to every project, ensuring results that complement the elegant character of Chislehurst properties and their gardens.",
+      "localizedDescription": "In Chislehurst, we specialize in high-end outdoor furniture refinishing, catering to the area's mix of period homes with expansive gardens and modern residences with stylish patios."
+    },
+    {
+      "slug": "biggin-hill",
+      "name": "Biggin Hill",
+      "title": "Outdoor Furniture Spraying Services in Biggin Hill",
+      "introduction": "Transform your Biggin Hill outdoor spaces with our expert furniture spraying services. We offer tailored solutions that respect the unique rural-urban blend of Biggin Hill, delivering stunning results for every home and garden.",
+      "localizedDescription": "Our Biggin Hill service excels in updating outdoor furniture for both traditional country-style homes with large gardens and contemporary properties with modern outdoor living areas."
+    },
+    {
+      "slug": "addington",
+      "name": "Addington",
+      "title": "Outdoor Furniture Spraying Services in Addington",
+      "introduction": "Elevate your Addington outdoor living spaces with our professional furniture spraying solutions. Our team combines local insight with industry-leading techniques to breathe new life into garden and patio furniture across Addington.",
+      "localizedDescription": "In Addington, we cater to a wide range of property types, from historic homes with traditional gardens to modern developments with contemporary outdoor spaces."
+    },
+    {
+      "slug": "shirley",
+      "name": "Shirley",
+      "title": "Outdoor Furniture Spraying Services in Shirley",
+      "introduction": "Revitalize your Shirley outdoor spaces with our expert furniture spraying services. We bring a blend of creativity and precision to every project, reflecting the diverse character of Shirley homes and their gardens.",
+      "localizedDescription": "Our Shirley service specializes in updating outdoor furniture for both family homes with spacious gardens and apartments with compact patios, offering bespoke solutions to suit every style and budget."
+    },
+    {
+      "slug": "coney-hall",
+      "name": "Coney Hall",
+      "title": "Outdoor Furniture Spraying Services in Coney Hall",
+      "introduction": "Transform your Coney Hall outdoor living areas with our professional furniture spraying solutions. Our team offers tailored services that respect the area's suburban charm while delivering modern, stylish results for your garden furniture.",
+      "localizedDescription": "In Coney Hall, we excel in refreshing outdoor furniture for a variety of property types, from detached houses with large gardens to bungalows with intimate patio spaces."
+    },
+    {
+      "slug": "shortlands",
+      "name": "Shortlands",
+      "title": "Outdoor Furniture Spraying Services in Shortlands",
+      "introduction": "Elevate your Shortlands outdoor spaces with our expert furniture spraying services. We combine local knowledge with cutting-edge techniques to deliver stunning transformations that enhance the elegance of Shortlands homes and gardens.",
+      "localizedDescription": "Our Shortlands service caters to a diverse range of outdoor styles, offering bespoke solutions for both period properties with traditional gardens and modern residences with contemporary outdoor living areas."
+    },
+    {
+      "slug": "petts-wood",
+      "name": "Petts Wood",
+      "title": "Outdoor Furniture Spraying Services in Petts Wood",
+      "introduction": "Revitalize your Petts Wood outdoor living areas with our professional furniture spraying solutions. Our team brings a wealth of experience to every project, ensuring results that complement the distinctive character of Petts Wood properties and their gardens.",
+      "localizedDescription": "In Petts Wood, we specialize in high-quality outdoor furniture refinishing, catering to the area's mix of 1930s houses with established gardens and newer builds with modern patios."
+    },
+    {
+      "slug": "new-addington",
+      "name": "New Addington",
+      "title": "Outdoor Furniture Spraying Services in New Addington",
+      "introduction": "Transform your New Addington outdoor spaces with our expert furniture spraying services. We offer tailored solutions that respect the unique character of New Addington, delivering stunning results for every home and garden.",
+      "localizedDescription": "Our New Addington service excels in updating outdoor furniture for both council-built properties with communal green spaces and private homes with individual gardens."
+    },
+    {
+      "slug": "keston",
+      "name": "Keston",
+      "title": "Outdoor Furniture Spraying Services in Keston",
+      "introduction": "Elevate your Keston outdoor living areas with our professional furniture spraying solutions. Our team combines local insight with industry-leading techniques to breathe new life into garden and patio furniture across Keston.",
+      "localizedDescription": "In Keston, we cater to a wide range of property types, from rural cottages with expansive gardens to modern family homes with stylish outdoor entertainment areas."
+    },
+    {
+      "slug": "downham",
+      "name": "Downham",
+      "title": "Outdoor Furniture Spraying Services in Downham",
+      "introduction": "Revitalize your Downham outdoor spaces with our expert furniture spraying services. We bring a blend of creativity and precision to every project, reflecting the diverse character of Downham homes and their gardens.",
+      "localizedDescription": "Our Downham service specializes in updating outdoor furniture for both interwar properties with traditional gardens and newer developments with contemporary outdoor living spaces."
+    },
+    {
+      "slug": "west-wickham",
+      "name": "West Wickham",
+      "title": "Outdoor Furniture Spraying Services in West Wickham",
+      "introduction": "Transform your West Wickham outdoor living areas with our professional furniture spraying solutions. Our team offers tailored services that respect the area's suburban elegance while delivering modern, stylish results for your garden furniture.",
+      "localizedDescription": "In West Wickham, we excel in refreshing outdoor furniture for a variety of property types, from 1930s houses with mature gardens to contemporary homes with sleek patio designs, preserving local character while adding a fresh, updated look."
+    }
+  ]
+}

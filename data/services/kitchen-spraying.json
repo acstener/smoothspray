@@ -129,12 +129,12 @@
   },
   "customerTestimonials": [
     {
-      "quote": "I can't believe the transformation! SmoothSpray turned our outdated kitchen into a showpiece without the hassle and expense of a full renovation. The team was professional, efficient, and the results are stunning!",
-      "author": "John and Jane Smith, [Local Neighborhood]"
+      "quote": "The work was fast and efficient. All aspects of the job were catered for and completed with professionalism",
+      "author": "Mr Mark Scott, Bromley"
     },
     {
-      "quote": "The kitchen spraying service from SmoothSpray was a game-changer for our home. We got a brand-new look for less than half the cost of replacing our cabinets. Their attention to detail and customer service is unmatched!",
-      "author": "Sarah Johnson, [Nearby Town]"
+      "quote": "We would have no hesitation in highly recommending Coutts Building . We would also be happy for anyone to come and look at the work they have done for us.",
+      "author": "J Lane, Croydon"
     }
   ],
   "pricingInfo": "For our professional kitchen spraying and refinishing services, please request a quote. While prices may vary based on the scope of work and materials used, we pride ourselves on offering premium results at a fraction of the cost of a full kitchen remodel. We also offer flexible financing options to make your dream kitchen more accessible.",
@@ -146,37 +146,128 @@
     {
       "slug": "bromley",
       "title": "Kitchen Spraying Services in Bromley",
-      "introduction": "Transform your Bromley kitchen with our expert spraying services.",
-      "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
-      "whyChooseUs": [
-        "Trusted by Bromley homeowners for over a decade",
-        "Specialized knowledge of local architectural styles",
-        "Eco-friendly paint options suitable for Bromley's climate",
-        "Quick turnaround times to minimize disruption to your home"
-      ],
-      "recentProjects": [],
-      "testimonials": [],
-      "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000. Please request a quote for more details.",
-      "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
-      "faq": [],
-      "aboutUs": "Serving Bromley for over 15 years.",
-      "relatedServices": ["furniture-spraying", "upvc-spraying"]
+      "introduction": "Transform your Bromley kitchen with our expert spraying services. Our skilled team brings years of experience and cutting-edge techniques to breathe new life into your space. Whether you're looking to update a tired kitchen or completely reinvent your culinary haven, our professional spraying solutions offer a cost-effective and stunning alternative to full renovations. We pride ourselves on delivering exceptional results that will make your Bromley kitchen the envy of the neighborhood.",
+      "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties."
     },
     {
       "slug": "beckenham",
       "title": "Kitchen Spraying Services in Beckenham",
-      "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
-      "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
-      "whyChooseUs": [
-        "Experienced in Beckenham home styles",
-        "Eco-friendly and durable paint options",
-        "Efficient service with minimal disruption",
-        "Competitive pricing for Beckenham residents"
-      ],
-      "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800. Please request a quote for more details.",
-      "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
-      "aboutUs": "With years of experience serving Beckenham.",
-      "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
+      "introduction": "Revitalize your Beckenham kitchen with our professional spraying solutions. Our expert team combines local knowledge with industry-leading techniques to transform your kitchen space. From quaint cottages to modern apartments, we offer tailored services to suit every Beckenham home.",
+      "localizedDescription": "Our Beckenham service caters to a diverse range of kitchen styles, from traditional to contemporary designs."
+    },
+    {
+      "slug": "croydon",
+      "title": "Kitchen Spraying Services in Croydon",
+      "introduction": "Elevate your Croydon kitchen with our professional spraying solutions. Our experienced team brings innovative techniques and local expertise to every project, ensuring stunning results that reflect the diverse character of Croydon homes.",
+      "localizedDescription": "Our Croydon team excels in refreshing kitchens in diverse architectural styles, from Victorian terraces to contemporary apartments."
+    },
+    {
+      "slug": "orpington",
+      "title": "Kitchen Spraying Services in Orpington",
+      "introduction": "Transform your Orpington kitchen with our expert spraying services. We combine local knowledge with cutting-edge techniques to breathe new life into kitchens across Orpington, offering a cost-effective alternative to full renovations.",
+      "localizedDescription": "In Orpington, we cater to a wide range of kitchen styles, from traditional country kitchens to sleek, modern designs."
+    },
+    {
+      "slug": "hayes",
+      "title": "Kitchen Spraying Services in Hayes",
+      "introduction": "Revitalize your Hayes kitchen with our professional spraying solutions. Our team brings years of experience and local insight to every project, ensuring exceptional results that complement the unique character of Hayes homes.",
+      "localizedDescription": "Our Hayes service specializes in updating both classic and contemporary kitchen designs, tailored to local preferences."
+    },
+    {
+      "slug": "penge",
+      "title": "Kitchen Spraying Services in Penge",
+      "introduction": "Transform your Penge kitchen with our expert spraying services. We offer bespoke solutions that cater to the diverse architectural styles found in Penge, from Victorian terraces to modern builds.",
+      "localizedDescription": "In Penge, we excel in refreshing kitchens of all sizes, bringing new life to spaces both large and compact."
+    },
+    {
+      "slug": "sydenham",
+      "title": "Kitchen Spraying Services in Sydenham",
+      "introduction": "Elevate your Sydenham kitchen with our professional spraying solutions. Our team combines local expertise with industry-leading techniques to deliver stunning kitchen transformations across Sydenham.",
+      "localizedDescription": "Our Sydenham service caters to the area's mix of period properties and newer homes, offering tailored solutions for every kitchen style."
+    },
+    {
+      "slug": "crystal-palace",
+      "title": "Kitchen Spraying Services in Crystal Palace",
+      "introduction": "Revitalize your Crystal Palace kitchen with our expert spraying services. We bring a blend of creativity and precision to every project, reflecting the unique character of Crystal Palace homes.",
+      "localizedDescription": "In Crystal Palace, we specialize in updating kitchens in both Victorian-era properties and modern apartments, preserving local charm while adding contemporary flair."
+    },
+    {
+      "slug": "south-norwood",
+      "title": "Kitchen Spraying Services in South Norwood",
+      "introduction": "Transform your South Norwood kitchen with our professional spraying solutions. Our team offers tailored services that respect the area's rich architectural heritage while delivering modern, stylish results.",
+      "localizedDescription": "Our South Norwood service excels in refreshing kitchens in a variety of property types, from terraced houses to new-build homes."
+    },
+    {
+      "slug": "elmers-end",
+      "title": "Kitchen Spraying Services in Elmers End",
+      "introduction": "Elevate your Elmers End kitchen with our expert spraying services. We combine local knowledge with cutting-edge techniques to deliver stunning kitchen transformations that enhance the charm of Elmers End homes.",
+      "localizedDescription": "In Elmers End, we cater to a diverse range of kitchen styles, offering bespoke solutions for both traditional and contemporary designs."
+    },
+    {
+      "slug": "chislehurst",
+      "title": "Kitchen Spraying Services in Chislehurst",
+      "introduction": "Revitalize your Chislehurst kitchen with our professional spraying solutions. Our team brings a wealth of experience to every project, ensuring results that complement the elegant character of Chislehurst properties.",
+      "localizedDescription": "Our Chislehurst service specializes in high-end kitchen refinishing, catering to the area's mix of period homes and modern residences."
+    },
+    {
+      "slug": "biggin-hill",
+      "title": "Kitchen Spraying Services in Biggin Hill",
+      "introduction": "Transform your Biggin Hill kitchen with our expert spraying services. We offer tailored solutions that respect the unique rural-urban blend of Biggin Hill, delivering stunning results for every home.",
+      "localizedDescription": "In Biggin Hill, we excel in updating kitchens in both traditional country-style homes and contemporary properties."
+    },
+    {
+      "slug": "addington",
+      "title": "Kitchen Spraying Services in Addington",
+      "introduction": "Elevate your Addington kitchen with our professional spraying solutions. Our team combines local insight with industry-leading techniques to breathe new life into kitchens across Addington.",
+      "localizedDescription": "Our Addington service caters to a wide range of property types, from historic homes to modern developments, ensuring tailored results for every kitchen."
+    },
+    {
+      "slug": "shirley",
+      "title": "Kitchen Spraying Services in Shirley",
+      "introduction": "Revitalize your Shirley kitchen with our expert spraying services. We bring a blend of creativity and precision to every project, reflecting the diverse character of Shirley homes.",
+      "localizedDescription": "In Shirley, we specialize in updating kitchens in both family homes and apartments, offering bespoke solutions to suit every style and budget."
+    },
+    {
+      "slug": "coney-hall",
+      "title": "Kitchen Spraying Services in Coney Hall",
+      "introduction": "Transform your Coney Hall kitchen with our professional spraying solutions. Our team offers tailored services that respect the area's suburban charm while delivering modern, stylish results.",
+      "localizedDescription": "Our Coney Hall service excels in refreshing kitchens in a variety of property types, from detached houses to bungalows."
+    },
+    {
+      "slug": "shortlands",
+      "title": "Kitchen Spraying Services in Shortlands",
+      "introduction": "Elevate your Shortlands kitchen with our expert spraying services. We combine local knowledge with cutting-edge techniques to deliver stunning kitchen transformations that enhance the elegance of Shortlands homes.",
+      "localizedDescription": "In Shortlands, we cater to a diverse range of kitchen styles, offering bespoke solutions for both period properties and modern residences."
+    },
+    {
+      "slug": "petts-wood",
+      "title": "Kitchen Spraying Services in Petts Wood",
+      "introduction": "Revitalize your Petts Wood kitchen with our professional spraying solutions. Our team brings a wealth of experience to every project, ensuring results that complement the distinctive character of Petts Wood properties.",
+      "localizedDescription": "Our Petts Wood service specializes in high-quality kitchen refinishing, catering to the area's mix of 1930s houses and newer builds."
+    },
+    {
+      "slug": "new-addington",
+      "title": "Kitchen Spraying Services in New Addington",
+      "introduction": "Transform your New Addington kitchen with our expert spraying services. We offer tailored solutions that respect the unique character of New Addington, delivering stunning results for every home.",
+      "localizedDescription": "In New Addington, we excel in updating kitchens in both council-built properties and private homes, ensuring quality results regardless of the original kitchen style."
+    },
+    {
+      "slug": "keston",
+      "title": "Kitchen Spraying Services in Keston",
+      "introduction": "Elevate your Keston kitchen with our professional spraying solutions. Our team combines local insight with industry-leading techniques to breathe new life into kitchens across Keston.",
+      "localizedDescription": "Our Keston service caters to a wide range of property types, from rural cottages to modern family homes, ensuring tailored results for every kitchen."
+    },
+    {
+      "slug": "downham",
+      "title": "Kitchen Spraying Services in Downham",
+      "introduction": "Revitalize your Downham kitchen with our expert spraying services. We bring a blend of creativity and precision to every project, reflecting the diverse character of Downham homes.",
+      "localizedDescription": "In Downham, we specialize in updating kitchens in both interwar properties and newer developments, offering bespoke solutions to suit every style and budget."
+    },
+    {
+      "slug": "west-wickham",
+      "title": "Kitchen Spraying Services in West Wickham",
+      "introduction": "Transform your West Wickham kitchen with our professional spraying solutions. Our team offers tailored services that respect the area's suburban elegance while delivering modern, stylish results.",
+      "localizedDescription": "Our West Wickham service excels in refreshing kitchens in a variety of property types, from 1930s houses to contemporary homes, preserving local character while adding a fresh, updated look."
     }
   ]
 }
