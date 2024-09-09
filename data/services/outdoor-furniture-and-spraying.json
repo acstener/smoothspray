@@ -1,45 +1,182 @@
 {
-    "slug": "outdoor-furniture-and-spraying",
-    "name": "Outdoor Furniture and Spraying",
-    "description": "Transform your outdoor furniture with our professional spraying service.",
-    "image": "/images/services/kitchen-spraying.jpg",
-    "imageId": "ipcabm48ATw",
-    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"],
-    "locations": [
-      {
-        "slug": "bromley",
-        "title": "Kitchen Spraying Services in Bromley",
-        "introduction": "Transform your Bromley kitchen with our expert spraying services.",
-        "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
-        "whyChooseUs": [
-          "Trusted by Bromley homeowners for over a decade",
-          "Specialized knowledge of local architectural styles",
-          "Eco-friendly paint options suitable for Bromley's climate",
-          "Quick turnaround times to minimize disruption to your home"
-        ],
-        "recentProjects": [],
-        "testimonials": [],
-        "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000.",
-        "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
-        "faq": [],
-        "aboutUs": "Serving Bromley for over 15 years.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying"]
-      },
-      {
-        "slug": "beckenham",
-        "title": "Kitchen Spraying Services in Beckenham",
-        "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
-        "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
-        "whyChooseUs": [
-          "Experienced in Beckenham home styles",
-          "Eco-friendly and durable paint options",
-          "Efficient service with minimal disruption",
-          "Competitive pricing for Beckenham residents"
-        ],
-        "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800.",
-        "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
-        "aboutUs": "With years of experience serving Beckenham.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
-      }
-    ]
-  }
+  "slug": "outdoor-furniture-and-spraying",
+  "name": "Outdoor Furniture Spraying and Refinishing",
+  "description": "Revitalize your outdoor spaces with our expert spraying service - the affordable way to refresh your garden furniture.",
+  "image": "https://nsdr.b-cdn.net/Project%20pics/david-hunter-M9gGS4ggbq4-unsplash.jpg",
+  "imageId": "GhimnIXlrBQ",
+  "subServices": [
+    "Garden Furniture Spraying",
+    "Patio Set Refinishing",
+    "Outdoor Structure Painting"
+  ],
+  "introduction": "Breathe new life into your outdoor living areas without the expense of replacing your furniture. Our professional outdoor furniture spraying service offers a cost-effective solution to rejuvenate your garden spaces. Using high-quality, weather-resistant paints and finishes, we transform worn garden furniture, patio sets, and outdoor structures, giving your exterior a fresh, vibrant look that withstands the British weather.",
+  "benefits": [
+    {
+      "title": "Affordable Outdoor Makeover",
+      "description": "Achieve a stunning transformation of your garden furniture at a fraction of the cost of buying new pieces."
+    },
+    {
+      "title": "Enhance Your Outdoor Living",
+      "description": "A professionally refinished outdoor space can significantly increase your enjoyment of your garden and boost your property's appeal."
+    },
+    {
+      "title": "Weather-Resistant, Long-Lasting Finish",
+      "description": "Our specialized outdoor spraying techniques provide a durable, smooth finish that withstands sun, rain, and daily use for years to come."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Local Experts in Outdoor Refinishing",
+      "description": "Our team of skilled professionals has years of experience in outdoor furniture spraying, serving UK homeowners with pride."
+    },
+    {
+      "title": "Premium, Weather-Resistant Materials",
+      "description": "We use top-quality, UV-resistant paints and finishes that are both environmentally friendly and built to withstand British weather conditions."
+    },
+    {
+      "title": "On-Site Service with Minimal Disruption",
+      "description": "Our efficient process means your outdoor furniture transformation is completed quickly, with minimal impact on your daily routine."
+    },
+    {
+      "title": "100% Satisfaction Guarantee",
+      "description": "We stand behind our work with a comprehensive warranty and a commitment to your complete satisfaction."
+    }
+  ],
+  "process": [
+    "Step 1: Thorough cleaning and preparation of all outdoor surfaces to ensure optimal paint adhesion.",
+    "Step 2: Application of high-quality, weather-resistant paint or finish using state-of-the-art spraying equipment for a flawless result.",
+    "Step 3: Meticulous inspection and touch-ups to guarantee a perfect finish that meets our rigorous quality standards."
+  ],
+  "materialsAndFinishes": [
+    {
+      "title": "Premium Outdoor Paints",
+      "description": "We offer a wide range of high-quality, weather-resistant paints, including specialized coatings for metal, wood, and plastic outdoor furniture."
+    },
+    {
+      "title": "Innovative Protective Finishes",
+      "description": "Our advanced finishing techniques can add extra protection against UV rays, moisture, and temperature fluctuations, extending the life of your outdoor furniture."
+    },
+    {
+      "title": "Rust-Proofing Treatments",
+      "description": "For metal furniture, we apply specialized rust-proofing treatments to prevent corrosion and ensure longevity in damp British conditions."
+    }
+  ],
+  "beforeAfterGallery": [
+    {
+      "before": "",
+      "after": "",
+      "description": "Stunning patio set transformation in [Local Park]: From weathered and faded to vibrant and inviting."
+    },
+    {
+      "before": "",
+      "after": "",
+      "description": "Complete garden furniture makeover in [Another Local Area]: Refreshed metal and wooden pieces for a cohesive, stylish outdoor living space."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does your outdoor furniture spraying process take?",
+      "answer": "Our efficient process typically takes 1-3 days for an average garden set, depending on the number and size of pieces. We work diligently to minimize disruption to your outdoor enjoyment."
+    },
+    {
+      "question": "Can you match my desired colour scheme for my garden?",
+      "answer": "Absolutely! Our colour matching expertise allows us to recreate any shade you desire or complement your existing garden design for a cohesive look."
+    },
+    {
+      "question": "What kind of warranty do you offer on your outdoor furniture refinishing services?",
+      "answer": "We stand behind our work with a 3-year warranty on all our outdoor furniture spraying and refinishing services, giving you peace of mind in your investment."
+    },
+    {
+      "question": "How should I prepare my outdoor furniture for the refinishing project?",
+      "answer": "We'll provide you with a detailed checklist, but generally, you'll need to clear the area around your furniture. Our team will handle all the necessary cleaning, protection, and preparation of the pieces."
+    }
+  ],
+  "elementsWeSpray": [
+    {
+      "element": "Garden Tables and Chairs",
+      "description": "Transform your outdoor dining sets, bistro sets, and loungers with our expert spraying service, achieving a smooth, durable finish that looks brand-new and withstands the elements."
+    },
+    {
+      "element": "Patio Sofas and Sectionals",
+      "description": "Revitalize your outdoor living room furniture with our weather-resistant finishes, bringing new life to cushion frames and decorative elements."
+    },
+    {
+      "element": "Pergolas and Arbors",
+      "description": "We can refresh and protect wooden structures like pergolas and arbors, enhancing their appearance and extending their lifespan."
+    },
+    {
+      "element": "Planters and Garden Accessories",
+      "description": "Give your planters, trellises, and other garden accessories a coordinated look with our custom spraying services."
+    }
+  ],
+  "professionalBenefits": [
+    {
+      "benefit": "Expert Colour Consultation",
+      "description": "Our professional colour experts will help you choose the perfect palette to achieve your dream outdoor space, whether you're looking to match existing elements or create a whole new look."
+    },
+    {
+      "benefit": "Weather-Resistant, Even Finish",
+      "description": "Our advanced spraying techniques and equipment ensure a smooth, even finish that's specifically designed to withstand outdoor conditions, rivaling the look of brand-new garden furniture."
+    },
+    {
+      "benefit": "Comprehensive Project Management",
+      "description": "From initial consultation to final inspection, we handle every aspect of your outdoor furniture transformation, ensuring a stress-free experience and stunning results."
+    }
+  ],
+  "maintenanceAndCare": {
+    "description": "To preserve your newly refinished outdoor furniture, we recommend covering items during harsh weather and cleaning regularly with mild soap and water. Avoid pressure washing or abrasive cleaners.",
+    "longevity": "Our professional-grade outdoor finishes are designed to last. With proper care, you can expect your refinished garden furniture to look great for 3-5 years or more, depending on exposure and usage."
+  },
+  "customerTestimonials": [
+    {
+      "quote": "I'm amazed at the transformation! SmoothSpray turned our tired old garden set into what looks like brand new furniture. The team was professional, and the weather-resistant finish has held up beautifully through rain and shine.",
+      "author": "Emma and James Taylor, [Local Neighborhood]"
+    },
+    {
+      "quote": "The outdoor furniture spraying service from SmoothSpray was exactly what our patio needed. We got a fresh new look for less than half the cost of buying new furniture. Their attention to detail and knowledge of outdoor finishes is impressive!",
+      "author": "Michael Brown, [Nearby Town]"
+    }
+  ],
+  "pricingInfo": "For our professional outdoor furniture spraying and refinishing services, please request a quote. While prices may vary based on the number of pieces and complexity of the job, we pride ourselves on offering premium results at a fraction of the cost of replacing your garden furniture. We also offer package deals for complete outdoor living set renewals.",
+  "environmentalCommitment": {
+    "ecoFriendlyOptions": "We're committed to environmental responsibility, offering a selection of low-VOC and eco-friendly paint options that are safe for your garden and the planet.",
+    "wasteReduction": "Our refinishing process significantly reduces landfill waste compared to replacing outdoor furniture. We also practice strict waste reduction, recycling unused materials and properly disposing of any substances."
+  },
+  "locations": [
+    {
+      "slug": "bromley",
+      "title": "Outdoor Furniture Spraying Services in Bromley",
+      "introduction": "Revitalize your Bromley garden with our expert outdoor furniture spraying services.",
+      "localizedDescription": "In Bromley, we specialize in refreshing garden furniture for both modern homes and period properties, enhancing outdoor living spaces across the borough.",
+      "whyChooseUs": [
+        "Trusted by Bromley homeowners for over a decade",
+        "Specialized knowledge of local outdoor living trends",
+        "Weather-resistant finishes perfect for Bromley's climate",
+        "Quick service to minimize disruption to your outdoor enjoyment"
+      ],
+      "recentProjects": [],
+      "testimonials": [],
+      "pricingInfo": "Outdoor furniture spraying in Bromley typically ranges from £200 to £800, depending on the size and complexity of the set. Please request a quote for more details.",
+      "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
+      "faq": [],
+      "aboutUs": "Serving Bromley's outdoor living needs for over 15 years.",
+      "relatedServices": ["garden-fence-spraying", "decking-restoration", "outdoor-kitchen-spraying"]
+    },
+    {
+      "slug": "beckenham",
+      "title": "Outdoor Furniture Spraying Services in Beckenham",
+      "introduction": "Transform your Beckenham outdoor spaces with our professional furniture spraying services.",
+      "localizedDescription": "In Beckenham, we offer bespoke outdoor furniture spraying solutions to suit the diverse styles of local gardens and patios.",
+      "whyChooseUs": [
+        "Experienced in Beckenham's unique garden styles",
+        "Eco-friendly and durable paint options ideal for local weather conditions",
+        "Efficient service to maximize your outdoor season",
+        "Competitive pricing for Beckenham residents"
+      ],
+      "pricingInfo": "Outdoor furniture spraying in Beckenham typically costs between £180 and £750, depending on the project scope. Please request a quote for more details.",
+      "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
+      "aboutUs": "With years of experience serving Beckenham, we're dedicated to enhancing your outdoor living experience.",
+      "relatedServices": ["garden-furniture-restoration", "outdoor-wood-treatment", "patio-furniture-spraying"]
+    }
+  ]
+}
