@@ -70,13 +70,20 @@ export async function getServiceData(slug: string): Promise<ServiceData | null> 
   }
 }
 
-export async function getServiceLocationData(serviceSlug: string, locationSlug: string): Promise<ServiceLocation | null> {
-  const serviceData = await getServiceData(serviceSlug);
-  if (!serviceData || !serviceData.locations) {
-    console.warn(`No locations found for service: ${serviceSlug}`);
+export async function getServiceLocationData(service: string, location: string): Promise<ServiceLocationData | null> {
+  const serviceData = await getServiceData(service);
+  if (!serviceData) return null;
+
+  const locationData = serviceData.locations.find((loc: ServiceLocation) => loc.slug === location);
+
+  if (!locationData) {
     return null;
   }
-  return serviceData.locations.find((location: ServiceLocation) => location.slug === locationSlug) || null;
+
+  return {
+    ...serviceData,
+    location: locationData
+  };
 }
 
 export async function getAllServiceLocationSlugs() {

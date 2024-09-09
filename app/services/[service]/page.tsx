@@ -333,11 +333,6 @@ function CustomerTestimonials({ serviceData }: { serviceData: ServiceData }) {
       ) : (
         <p className="text-center text-lg">Customer testimonials are not available at the moment.</p>
       )}
-      <div className="text-center mt-8">
-        <Button asChild>
-          <Link href="/case-studies">View Detailed Case Studies</Link>
-        </Button>
-      </div>
     </section>
   )
 }
@@ -452,20 +447,8 @@ function ContactInformation() {
           <CardTitle className="text-2xl">Ready to Transform Your Space?</CardTitle>
           <CardDescription className="text-primary-foreground/80">Get in touch with us today for a free consultation and quote!</CardDescription>
         </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="flex items-center">
-            <Phone className="mr-2 h-5 w-5" />
-            <span className="text-lg">Call us: (555) 123-4567</span>
-          </div>
-          <div className="flex items-center">
-            <Mail className="mr-2 h-5 w-5" />
-            <span className="text-lg">Email: info@spraypainting.com</span>
-          </div>
-          <div className="flex items-center">
-            <Clock className="mr-2 h-5 w-5" />
-            <span className="text-lg">Book your free consultation today!</span>
-          </div>
-          <div className="mt-6">
+        <CardContent className="space-y-4">      
+          <div className="mt-1">
             <QuoteModal>
               <Button size="lg" variant="secondary">Get a Free Quote</Button>
             </QuoteModal>

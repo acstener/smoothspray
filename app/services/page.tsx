@@ -3,13 +3,13 @@ import Image from 'next/image';
 import { getAllServices } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Paintbrush, Spray, Home, Building2, Wrench, PaintBucket } from 'lucide-react';
+import { Paintbrush, Home, Building2, Wrench, PaintBucket } from 'lucide-react';
 import QuoteModal from '@/components/QuoteModal';
 
 const ServiceIcon = ({ name }) => {
   const icons = {
     'Interior Painting': <Paintbrush className="h-6 w-6" />,
-    'Exterior Painting': <Spray className="h-6 w-6" />,
+    'Exterior Painting': <PaintBucket className="h-6 w-6" />, // Changed from Spray to PaintBucket
     'Residential Services': <Home className="h-6 w-6" />,
     'Commercial Services': <Building2 className="h-6 w-6" />,
     'Maintenance': <Wrench className="h-6 w-6" />,
