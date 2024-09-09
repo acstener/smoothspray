@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket } from 'lucide-react'
+import QuoteModal from '@/components/QuoteModal'
 
 export async function generateStaticParams() {
   const services = await getAllServices()
@@ -69,7 +70,6 @@ export default async function Service({ params }: { params: { service: string } 
       console.error('Error fetching image:', error);
     }
   }
-
   return (
     <div className="container mx-auto px-4 py-16 space-y-16">
       <h1 className="text-4xl font-bold mb-6">{serviceData.name}</h1>
@@ -104,6 +104,11 @@ export default async function Service({ params }: { params: { service: string } 
               </CardContent>
             </Card>
           )}
+          <div className="mt-6">
+            <QuoteModal>
+              <Button>Get a Quote</Button>
+            </QuoteModal>
+          </div>
         </div>
       </div>
 
@@ -185,17 +190,20 @@ export default async function Service({ params }: { params: { service: string } 
       </section>
 
       {/* Before and After Gallery */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-semibold mb-6">Before and After Gallery</h2>
-        {serviceData.beforeAfterGallery && serviceData.beforeAfterGallery.length > 0 ? (
+      {serviceData.beforeAfterGallery && serviceData.beforeAfterGallery.length > 0 && 
+       serviceData.beforeAfterGallery.some(item => item.before && item.after) && (
+        <section className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6">Before and After Gallery</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {serviceData.beforeAfterGallery.map((item, index) => (
+            {serviceData.beforeAfterGallery
+              .filter(item => item.before && item.after)
+              .map((item, index) => (
               <Card key={index}>
                 <CardContent className="p-0">
                   <div className="relative h-64">
                     <Image
                       src={item.before}
-                      alt={`Before and After ${index + 1}`}
+                      alt={`Before - ${item.description}`}
                       layout="fill"
                       objectFit="cover"
                     />
@@ -203,7 +211,7 @@ export default async function Service({ params }: { params: { service: string } 
                   <div className="relative h-64">
                     <Image
                       src={item.after}
-                      alt={`Before and After ${index + 1}`}
+                      alt={`After - ${item.description}`}
                       layout="fill"
                       objectFit="cover"
                     />
@@ -213,10 +221,8 @@ export default async function Service({ params }: { params: { service: string } 
               </Card>
             ))}
           </div>
-        ) : (
-          <p>Before and after gallery images are not available at the moment.</p>
-        )}
-      </section>
+        </section>
+      )}
 
       {/* FAQs */}
       <section className="mb-16">
@@ -330,7 +336,9 @@ export default async function Service({ params }: { params: { service: string } 
             </CardHeader>
             <CardContent>
               <p className="mb-4">{serviceData.pricingInfo}</p>
-              <Button>Request a Quote</Button>
+              <QuoteModal>
+                <Button>Request a Quote</Button>
+              </QuoteModal>
             </CardContent>
           </Card>
         ) : (
@@ -409,9 +417,9 @@ export default async function Service({ params }: { params: { service: string } 
               <Clock className="mr-2 h-4 w-4" />
               <span>Book your free consultation today!</span>
             </div>
-            <Button asChild>
-              <Link href="/get-a-quote">Get a Free Quote</Link>
-            </Button>
+            <QuoteModal>
+              <Button>Get a Free Quote</Button>
+            </QuoteModal>
           </CardContent>
         </Card>
       </section>

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto text-center">
-        <p>&copy; 2023 SprayMasters. All rights reserved.</p>
+        <p>&copy; 2024 SmoothSpray. All rights reserved.</p>
       </div>
     </footer>
   );

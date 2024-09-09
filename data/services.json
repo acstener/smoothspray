@@ -36,14 +36,6 @@
     "subServices": ["Metallic Wall Finishes", "Furniture Accents", "Decorative Elements"]
   },
   {
-    "slug": "bosh-spraying",
-    "name": "Bosh Spraying",
-    "description": "Experience the best in bosh spraying services.",
-    "image": "/images/services/bosh-spraying.jpg",
-    "imageId": "jkl012",
-    "subServices": ["Bosh Cabinets", "Bosh Countertops", "Bosh Appliances"]
-  },
-  {
     "slug": "wardrobes",
     "name": "Wardrobe Spraying",
     "description": "Give your wardrobes a fresh, modern look with our spraying service.",

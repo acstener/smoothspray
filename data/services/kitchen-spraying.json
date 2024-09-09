@@ -63,13 +63,13 @@
   ],
   "beforeAfterGallery": [
     {
-      "before": "/images/before1.jpg",
-      "after": "/images/after1.jpg",
+      "before": "",
+      "after": "",
       "description": "Stunning kitchen transformation in [Local Neighborhood]: From dated oak to modern gray cabinets with refinished countertops."
     },
     {
-      "before": "/images/before2.jpg",
-      "after": "/images/after2.jpg",
+      "before": "",
+      "after": "",
       "description": "Complete kitchen makeover in [Another Local Area]: Refreshed cabinets, countertops, and appliances for a fraction of replacement costs."
     }
   ],
