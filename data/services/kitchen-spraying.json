@@ -1,0 +1,42 @@
+{
+    "slug": "kitchen-spraying",
+    "name": "Kitchen Spraying",
+    "description": "Transform your kitchen with our professional spraying service.",
+    "image": "/images/services/kitchen-spraying.jpg",
+    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"],
+    "locations": [
+      {
+        "slug": "bromley",
+        "title": "Kitchen Spraying Services in Bromley",
+        "introduction": "Transform your Bromley kitchen with our expert spraying services.",
+        "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
+        "whyChooseUs": [
+          "Trusted by Bromley homeowners for over a decade",
+          "Specialized knowledge of local architectural styles",
+          "Eco-friendly paint options suitable for Bromley's climate",
+          "Quick turnaround times to minimize disruption to your home"
+        ],
+        "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000.",
+        "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
+        "aboutUs": "Serving Bromley for over 15 years.",
+        "relatedServices": ["furniture-spraying", "upvc-spraying"]
+      },
+      {
+        "slug": "beckenham",
+        "title": "Kitchen Spraying Services in Beckenham",
+        "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
+        "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
+        "whyChooseUs": [
+          "Experienced in Beckenham home styles",
+          "Eco-friendly and durable paint options",
+          "Efficient service with minimal disruption",
+          "Competitive pricing for Beckenham residents"
+        ],
+        "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800.",
+        "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
+        "aboutUs": "With years of experience serving Beckenham.",
+        "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
+      }
+      // Add more locations as needed
+    ]
+  }

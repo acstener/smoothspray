@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "bromley",
+    "name": "Bromley",
+    "description": "Serving the Bromley area with top-quality spraying services."
+  },
+  {
+    "slug": "beckenham",
+    "name": "Beckenham"
+  },
+  {
+    "slug": "croydon",
+    "name": "Croydon"
+  },
+  {
+    "slug": "orpington",
+    "name": "Orpington"
+  },
+  {
+    "slug": "hayes",
+    "name": "Hayes"
+  },
+  {
+    "slug": "penge",
+    "name": "Penge"
+  },
+  {
+    "slug": "sydenham",
+    "name": "Sydenham"
+  },
+  {
+    "slug": "crystal-palace",
+    "name": "Crystal Palace"
+  },
+  {
+    "slug": "south-norwood",
+    "name": "South Norwood"
+  },
+  {
+    "slug": "elmers-end",
+    "name": "Elmers End"
+  },
+  {
+    "slug": "chislehurst",
+    "name": "Chislehurst"
+  },
+  {
+    "slug": "biggin-hill",
+    "name": "Biggin Hill"
+  },
+  {
+    "slug": "addington",
+    "name": "Addington"
+  },
+  {
+    "slug": "shirley",
+    "name": "Shirley"
+  },
+  {
+    "slug": "coney-hall",
+    "name": "Coney Hall"
+  },
+  {
+    "slug": "shortlands",
+    "name": "Shortlands"
+  },
+  {
+    "slug": "petts-wood",
+    "name": "Petts Wood"
+  },
+  {
+    "slug": "new-addington",
+    "name": "New Addington"
+  },
+  {
+    "slug": "keston",
+    "name": "Keston"
+  },
+  {
+    "slug": "downham",
+    "name": "Downham"
+  },
+  {
+    "slug": "west-wickham",
+    "name": "West Wickham"
+  }
+]

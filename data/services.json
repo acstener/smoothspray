@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "kitchen-spraying",
+    "name": "Kitchen Spraying",
+    "description": "Transform your kitchen with our professional spraying service.",
+    "image": "/images/services/kitchen-spraying.jpg",
+    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"]
+  },
+  {
+    "slug": "furniture-spraying",
+    "name": "Furniture Spraying",
+    "description": "Revitalize your furniture with our expert spraying techniques.",
+    "image": "/images/services/furniture-spraying.jpg",
+    "subServices": ["Wood Furniture", "Metal Furniture", "Plastic Furniture"]
+  },
+  {
+    "slug": "outdoor-furniture-and-spraying",
+    "name": "Outdoor Furniture and Spraying",
+    "description": "Revitalize your outdoor spaces with our spraying service.",
+    "image": "/images/services/outdoor-furniture.jpg",
+    "subServices": ["Garden Furniture", "Patio Sets", "Outdoor Structures"]
+  },
+  {
+    "slug": "liquid-metal-finishes",
+    "name": "Liquid Metal Finishes",
+    "description": "Add a touch of luxury with our liquid metal finishing services.",
+    "image": "/images/services/liquid-metal.jpg",
+    "subServices": ["Metallic Wall Finishes", "Furniture Accents", "Decorative Elements"]
+  },
+  {
+    "slug": "bosh-spraying",
+    "name": "Bosh Spraying",
+    "description": "Experience the best in bosh spraying services.",
+    "image": "/images/services/bosh-spraying.jpg",
+    "subServices": ["Bosh Cabinets", "Bosh Countertops", "Bosh Appliances"]
+  },
+  {
+    "slug": "wardrobes",
+    "name": "Wardrobe Spraying",
+    "description": "Give your wardrobes a fresh, modern look with our spraying service.",
+    "image": "/images/services/wardrobes.jpg",
+    "subServices": ["Built-in Wardrobes", "Freestanding Wardrobes", "Walk-in Closets"]
+  },
+  {
+    "slug": "metal-and-feature-walls",
+    "name": "Metal and Feature Walls",
+    "description": "Create stunning feature walls with our metal and specialty finishes.",
+    "image": "/images/services/feature-walls.jpg",
+    "subServices": ["Metallic Wall Finishes", "Textured Walls", "Accent Walls"]
+  }]
