@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getServiceData, getLocations, getAllServices } from '@/lib/data'
+import { getSpecificImage } from '@/lib/unsplash'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket } from 'lucide-react'
@@ -11,9 +12,22 @@ export async function generateStaticParams() {
   return services.map(service => ({ service: service.slug }))
 }
 
-export default function Service({ params }: { params: { service: string } }) {
+export default async function Service({ params }: { params: { service: string } }) {
   const serviceData = getServiceData(params.service)
   const locations = getLocations()
+  
+  let serviceImage = null
+  if (serviceData && serviceData.imageId) {
+    console.log('Fetching image for service:', serviceData.name);
+    try {
+      serviceImage = await getSpecificImage(serviceData.imageId);
+      console.log('Fetched image:', serviceImage);
+    } catch (error) {
+      console.error('Error fetching image:', error);
+      // You could set a fallback image here
+      // serviceImage = { urls: { regular: '/path/to/fallback/image.jpg' } };
+    }
+  }
 
   if (!serviceData) {
     return (
@@ -32,12 +46,12 @@ export default function Service({ params }: { params: { service: string } }) {
       <h1 className="text-4xl font-bold mb-6">{serviceData.name}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div>
-          {serviceData.image && (
+          {serviceImage && (
             <Image 
-              src={serviceData.image} 
-              alt={serviceData.name} 
-              width={600} 
-              height={400} 
+              src={serviceImage.urls.regular}
+              alt={serviceData.name}
+              width={600}
+              height={400}
               className="rounded-lg object-cover w-full h-[400px]"
             />
           )}
@@ -179,10 +193,10 @@ export default function Service({ params }: { params: { service: string } }) {
               <CardContent className="p-0">
                 <div className="relative h-64">
                   <Image
-                    src={`/placeholder.svg?text=Before+and+After+${item}`}
+                    src={`/api/placeholder?text=Before+and+After+${item}`}
                     alt={`Before and After ${item}`}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="rounded-lg object-cover"
                   />
                 </div>
               </CardContent>
