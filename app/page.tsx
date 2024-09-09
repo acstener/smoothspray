@@ -104,29 +104,6 @@ export default async function Home() {
           </CardContent>
         </Card>
       </section>
-
-      <section>
-        <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {[
-            {
-              quote: "Smooth Spray transformed our office space with their expert painting. Highly recommended!",
-              author: "John Doe, CEO of Morelys"
-            },
-            {
-              quote: "The team's attention to detail and professionalism exceeded our expectations. Great job!",
-              author: "Jane Smith, Homeowner"
-            }
-          ].map((testimonial, index) => (
-            <Card key={index}>
-              <CardContent className="p-6">
-                <p className="italic mb-4">"{testimonial.quote}"</p>
-                <p className="text-right font-semibold">- {testimonial.author}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
     </main>
   );
 }
