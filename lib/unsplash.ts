@@ -4,9 +4,16 @@ export const unsplash = createApi({
   accessKey: process.env.UNSPLASH_ACCESS_KEY!,
 });
 
-const imageCache: Record<string, any> = {};
+const imageCache: Record<string, UnsplashImage | UnsplashImage[]> = {};
 
-export async function getSpecificImage(imageId: string) {
+interface UnsplashImage {
+  urls: {
+    regular: string;
+  };
+  // Add other properties as needed
+}
+
+export async function getSpecificImage(imageId: string): Promise<UnsplashImage | null> {
   try {
     const result = await unsplash.photos.get({ photoId: imageId });
     if (result.type === 'success') {
@@ -21,7 +28,7 @@ export async function getSpecificImage(imageId: string) {
   }
 }
 
-export async function getRandomImage(query: string, count: number = 1) {
+export async function getRandomImage(query: string, count: number = 1): Promise<UnsplashImage | UnsplashImage[] | null> {
   const cacheKey = `${query}_${count}`;
   if (imageCache[cacheKey]) {
     return imageCache[cacheKey];
@@ -36,7 +43,7 @@ export async function getRandomImage(query: string, count: number = 1) {
 
     if (result.type === 'success') {
       console.log('Successfully fetched image from Unsplash');
-      const response = count === 1 ? result.response : result.response;
+      const response = count === 1 ? result.response as UnsplashImage : result.response as UnsplashImage[];
       imageCache[cacheKey] = response;
       return response;
     } else {

@@ -1,45 +1,182 @@
 {
-    "slug": "kitchen-spraying",
-    "name": "Kitchen Spraying",
-    "description": "Transform your kitchen with our professional spraying service.",
-    "image": "/images/services/kitchen-spraying.jpg",
-    "imageId": "ipcabm48ATw",
-    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"],
-    "locations": [
-      {
-        "slug": "bromley",
-        "title": "Kitchen Spraying Services in Bromley",
-        "introduction": "Transform your Bromley kitchen with our expert spraying services.",
-        "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
-        "whyChooseUs": [
-          "Trusted by Bromley homeowners for over a decade",
-          "Specialized knowledge of local architectural styles",
-          "Eco-friendly paint options suitable for Bromley's climate",
-          "Quick turnaround times to minimize disruption to your home"
-        ],
-        "recentProjects": [],
-        "testimonials": [],
-        "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000.",
-        "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
-        "faq": [],
-        "aboutUs": "Serving Bromley for over 15 years.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying"]
-      },
-      {
-        "slug": "beckenham",
-        "title": "Kitchen Spraying Services in Beckenham",
-        "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
-        "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
-        "whyChooseUs": [
-          "Experienced in Beckenham home styles",
-          "Eco-friendly and durable paint options",
-          "Efficient service with minimal disruption",
-          "Competitive pricing for Beckenham residents"
-        ],
-        "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800.",
-        "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
-        "aboutUs": "With years of experience serving Beckenham.",
-        "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
-      }
-    ]
-  }
+  "slug": "kitchen-spraying",
+  "name": "SmoothSpray Kitchen Spraying and Refinishing",
+  "description": "Transform your kitchen with our expert spraying service - the affordable alternative to a full renovation.",
+  "image": "/images/services/kitchen-spraying.jpg",
+  "imageId": "ipcabm48ATw",
+  "subServices": [
+    "Cabinet Spraying and Refinishing",
+    "Countertop Resurfacing",
+    "Appliance Painting and Restoration"
+  ],
+  "introduction": "Revitalize your kitchen without the hefty price tag of a full remodel. Our professional kitchen spraying service offers a cost-effective solution to breathe new life into your space. Using high-quality, durable paints and finishes, we transform cabinets, countertops, and appliances, giving your kitchen a fresh, modern look that rivals a complete renovation.",
+  "benefits": [
+    {
+      "title": "Affordable Kitchen Makeover",
+      "description": "Achieve a stunning kitchen transformation at a fraction of the cost of replacing cabinets and countertops."
+    },
+    {
+      "title": "Boost Your Home's Value",
+      "description": "A professionally refinished kitchen can significantly increase your property's market value and appeal to potential buyers."
+    },
+    {
+      "title": "Long-Lasting, Factory-Like Finish",
+      "description": "Our specialized spraying techniques provide a durable, smooth finish that withstands daily use and looks factory-new for years."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Local Experts in Kitchen Refinishing",
+      "description": "Our team of skilled professionals has years of experience in kitchen spraying and refinishing, serving homeowners with pride."
+    },
+    {
+      "title": "Premium, Eco-Friendly Materials",
+      "description": "We use top-quality, low-VOC paints and finishes that are both environmentally friendly and built to last."
+    },
+    {
+      "title": "Minimal Disruption to Your Home",
+      "description": "Our efficient process means your kitchen transformation is completed in days, not weeks, with minimal impact on your daily routine."
+    },
+    {
+      "title": "100% Satisfaction Guarantee",
+      "description": "We stand behind our work with a comprehensive warranty and a commitment to your complete satisfaction."
+    }
+  ],
+  "process": [
+    "Step 1: Thorough preparation and cleaning of all surfaces to ensure optimal paint adhesion.",
+    "Step 2: Application of high-quality, durable paint or finish using state-of-the-art spraying equipment for a flawless result.",
+    "Step 3: Meticulous inspection and touch-ups to guarantee a perfect finish that meets our rigorous quality standards."
+  ],
+  "materialsAndFinishes": [
+    {
+      "title": "Premium Cabinet Paints",
+      "description": "We offer a wide range of high-quality paints, including water-based, oil-based, and specialty finishes, to achieve the perfect look and durability for your kitchen cabinets."
+    },
+    {
+      "title": "Innovative Countertop Resurfacing",
+      "description": "Our advanced countertop refinishing techniques can transform laminate, solid surface, and even natural stone countertops, saving you thousands on replacement costs."
+    },
+    {
+      "title": "Appliance Restoration",
+      "description": "Breathe new life into your kitchen appliances with our specialized paints and finishes, designed to withstand heat and daily use while perfectly matching your new kitchen aesthetic."
+    }
+  ],
+  "beforeAfterGallery": [
+    {
+      "before": "/images/before1.jpg",
+      "after": "/images/after1.jpg",
+      "description": "Stunning kitchen transformation in [Local Neighborhood]: From dated oak to modern gray cabinets with refinished countertops."
+    },
+    {
+      "before": "/images/before2.jpg",
+      "after": "/images/after2.jpg",
+      "description": "Complete kitchen makeover in [Another Local Area]: Refreshed cabinets, countertops, and appliances for a fraction of replacement costs."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does your kitchen spraying process take?",
+      "answer": "Our efficient process typically takes 3-5 days for an average-sized kitchen. We work diligently to minimize disruption to your home life while ensuring a high-quality finish."
+    },
+    {
+      "question": "Can you match my desired kitchen colour scheme?",
+      "answer": "Absolutely! Our colour matching expertise allows us to recreate any shade you desire or match existing elements in your kitchen for a cohesive look."
+    },
+    {
+      "question": "What kind of warranty do you offer on your kitchen refinishing services?",
+      "answer": "We stand behind our work with a comprehensive 5-year warranty on all our kitchen spraying and refinishing services, giving you peace of mind in your investment."
+    },
+    {
+      "question": "How should I prepare my kitchen for the refinishing project?",
+      "answer": "We'll provide you with a detailed checklist, but generally, you'll need to empty your cabinets and clear countertops. Our team will handle all the necessary protection and preparation of the space."
+    }
+  ],
+  "elementsWeSpray": [
+    {
+      "element": "Kitchen Cabinets",
+      "description": "Transform your kitchen cabinets with our expert spraying service, achieving a smooth, durable finish that looks factory-new and withstands years of use."
+    },
+    {
+      "element": "Countertops",
+      "description": "Our innovative countertop refinishing techniques can update laminate, solid surface, and natural stone countertops, saving you thousands on replacement costs."
+    },
+    {
+      "element": "Appliances",
+      "description": "Revitalize your kitchen appliances with our specialized painting service, making old fridges, stoves, and dishwashers look brand new and coordinate perfectly with your updated kitchen."
+    },
+    {
+      "element": "Trim and Architectural Details",
+      "description": "We meticulously refinish all trim, moulding, and architectural elements in your kitchen for a truly comprehensive transformation."
+    }
+  ],
+  "professionalBenefits": [
+    {
+      "benefit": "Expert Colour Consultation",
+      "description": "Our professional colour experts will help you choose the perfect palette to achieve your dream kitchen, whether you're looking to match existing elements or create a whole new look."
+    },
+    {
+      "benefit": "Flawless, Factory-Like Finish",
+      "description": "Our advanced spraying techniques and equipment ensure a smooth, even finish free of brush strokes or imperfections, rivaling the look of brand-new cabinetry and surfaces."
+    },
+    {
+      "benefit": "Comprehensive Project Management",
+      "description": "From initial consultation to final walk-through, we handle every aspect of your kitchen transformation, ensuring a stress-free experience and stunning results."
+    }
+  ],
+  "maintenanceAndCare": {
+    "description": "To preserve your newly refinished kitchen, we recommend using gentle, non-abrasive cleaners and avoiding harsh scrubbing. With proper care, your kitchen's new finish will maintain its beauty and durability for many years to come.",
+    "longevity": "Our professional-grade finishes are designed to last. With proper maintenance, you can expect your refinished kitchen to look great for 7-10 years or more, depending on usage."
+  },
+  "customerTestimonials": [
+    {
+      "quote": "I can't believe the transformation! SmoothSpray turned our outdated kitchen into a showpiece without the hassle and expense of a full renovation. The team was professional, efficient, and the results are stunning!",
+      "author": "John and Jane Smith, [Local Neighborhood]"
+    },
+    {
+      "quote": "The kitchen spraying service from SmoothSpray was a game-changer for our home. We got a brand-new look for less than half the cost of replacing our cabinets. Their attention to detail and customer service is unmatched!",
+      "author": "Sarah Johnson, [Nearby Town]"
+    }
+  ],
+  "pricingInfo": "For our professional kitchen spraying and refinishing services, please request a quote. While prices may vary based on the scope of work and materials used, we pride ourselves on offering premium results at a fraction of the cost of a full kitchen remodel. We also offer flexible financing options to make your dream kitchen more accessible.",
+  "environmentalCommitment": {
+    "ecoFriendlyOptions": "We're committed to environmental responsibility, offering a selection of low-VOC and eco-friendly paint options that are safe for your family and the planet.",
+    "wasteReduction": "Our refinishing process significantly reduces landfill waste compared to full kitchen replacements. We also practice strict waste reduction, recycling unused materials and properly disposing of any hazardous substances."
+  },
+  "locations": [
+    {
+      "slug": "bromley",
+      "title": "Kitchen Spraying Services in Bromley",
+      "introduction": "Transform your Bromley kitchen with our expert spraying services.",
+      "localizedDescription": "In Bromley, we specialize in updating kitchens in both modern homes and period properties.",
+      "whyChooseUs": [
+        "Trusted by Bromley homeowners for over a decade",
+        "Specialized knowledge of local architectural styles",
+        "Eco-friendly paint options suitable for Bromley's climate",
+        "Quick turnaround times to minimize disruption to your home"
+      ],
+      "recentProjects": [],
+      "testimonials": [],
+      "pricingInfo": "Kitchen spraying in Bromley typically ranges from £1,000 to £3,000. Please request a quote for more details.",
+      "serviceAreas": ["Bromley Common", "Bromley Park", "Bickley", "Shortlands"],
+      "faq": [],
+      "aboutUs": "Serving Bromley for over 15 years.",
+      "relatedServices": ["furniture-spraying", "upvc-spraying"]
+    },
+    {
+      "slug": "beckenham",
+      "title": "Kitchen Spraying Services in Beckenham",
+      "introduction": "Revitalize your Beckenham kitchen with our professional spraying services.",
+      "localizedDescription": "In Beckenham, we offer bespoke kitchen spraying solutions.",
+      "whyChooseUs": [
+        "Experienced in Beckenham home styles",
+        "Eco-friendly and durable paint options",
+        "Efficient service with minimal disruption",
+        "Competitive pricing for Beckenham residents"
+      ],
+      "pricingInfo": "Kitchen spraying in Beckenham typically costs between £900 and £2,800. Please request a quote for more details.",
+      "serviceAreas": ["Beckenham", "Clock House", "New Beckenham", "Eden Park"],
+      "aboutUs": "With years of experience serving Beckenham.",
+      "relatedServices": ["furniture-spraying", "upvc-spraying", "cabinet-refinishing"]
+    }
+  ]
+}

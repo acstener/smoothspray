@@ -5,7 +5,11 @@
     "description": "Transform your kitchen with our professional spraying service.",
     "image": "/images/services/kitchen-spraying.jpg",
     "imageId": "ipcabm48ATw",
-    "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"]
+    "subServices": [
+      "Cabinet Spraying",
+      "Countertop Refinishing",
+      "Appliance Painting"
+    ]
   },
   {
     "slug": "furniture-spraying",
@@ -54,4 +58,5 @@
     "image": "/images/services/feature-walls.jpg",
     "imageId": "pqr678",
     "subServices": ["Metallic Wall Finishes", "Textured Walls", "Accent Walls"]
-  }]
+  }
+]

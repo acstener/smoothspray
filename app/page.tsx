@@ -4,6 +4,13 @@ import { getAllServices } from '@/lib/data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
+// Define an interface for the service object
+interface Service {
+  slug: string;
+  name: string;
+  description: string;
+}
+
 export default async function Home() {
 	const services = await getAllServices();
 
@@ -14,7 +21,7 @@ export default async function Home() {
 				<h2 className="text-3xl font-bold mb-6">Our Premium Services</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 					{services.length > 0 ? (
-						services.map((service) => (
+						services.map((service: Service) => (
 							<Card key={service.slug} className="flex flex-col">
 								<CardHeader>
 									<CardTitle>{service.name}</CardTitle>
