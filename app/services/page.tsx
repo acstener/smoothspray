@@ -6,16 +6,16 @@ import { Button } from "@/components/ui/button"
 import { Paintbrush, Home, Building2, Wrench, PaintBucket } from 'lucide-react';
 import QuoteModal from '@/components/QuoteModal';
 
-const ServiceIcon = ({ name }) => {
+const ServiceIcon = ({ name }: { name: string }) => {
   const icons = {
     'Interior Painting': <Paintbrush className="h-6 w-6" />,
-    'Exterior Painting': <PaintBucket className="h-6 w-6" />, // Changed from Spray to PaintBucket
+    'Exterior Painting': <PaintBucket className="h-6 w-6" />,
     'Residential Services': <Home className="h-6 w-6" />,
     'Commercial Services': <Building2 className="h-6 w-6" />,
     'Maintenance': <Wrench className="h-6 w-6" />,
     'Custom Finishes': <PaintBucket className="h-6 w-6" />,
   };
-  return icons[name] || <Paintbrush className="h-6 w-6" />;
+  return icons[name as keyof typeof icons] || <Paintbrush className="h-6 w-6" />;
 };
 
 export default async function Services() {

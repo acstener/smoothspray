@@ -5,58 +5,53 @@ import { getServiceLocationData, getAllServiceLocationSlugs } from '@/lib/data'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket } from 'lucide-react'
+import { MapPin, PaintBucket, CheckCircle, Leaf, Droplet } from 'lucide-react'
 import QuoteModal from '@/components/QuoteModal'
 
-export async function generateStaticParams() {
-  return getAllServiceLocationSlugs()
+// Update these interfaces to match lib/data.ts
+interface ServiceLocation {
+  slug?: string;
+  title?: string;
+  introduction?: string;
+  localizedDescription?: string;
+  whyChooseUs?: string[];
+  recentProjects?: Array<{ title: string; description: string }>;
+  testimonials?: Array<{ text: string; author: string }>;
+  pricingInfo?: string;
+  serviceAreas?: string[];
+  faq?: Array<{ question: string; answer: string }>;
+  aboutUs?: string;
+  relatedServices?: string[];
+}
+
+interface ServiceData {
+  slug: string;
+  name: string;
+  description: string;
+  image: string;
+  imageId: string;
+  locations: ServiceLocation[];
+  subServices: string[];
+  introduction: string;
+  benefits: Array<{ title: string; description: string }>;
+  whyChooseUs: Array<{ title: string; description: string }>;
+  process: string[];
+  materialsAndFinishes: Array<{ title: string; description: string }>;
+  beforeAfterGallery: Array<{ before: string; after: string; description: string }>;
+  faq: Array<{ question: string; answer: string }>;
+  elementsWeSpray: Array<{ element: string; description: string }>;
+  professionalBenefits: Array<{ benefit: string; description: string }>;
+  maintenanceAndCare: { description: string; longevity: string };
+  customerTestimonials: Array<{ quote: string; author: string }>;
+  pricingInfo: string;
+  environmentalCommitment: { ecoFriendlyOptions: string; wasteReduction: string };
 }
 
 interface ServiceLocationData extends ServiceData {
-  location: {
-    slug: string;
-    title: string;
-    introduction: string;
-    localizedDescription: string;
-    whyChooseUs?: string[];
-    recentProjects?: Array<{ title: string; description: string }>;
-    testimonials?: Array<{ text: string; author: string }>;
-    pricingInfo?: string;
-    serviceAreas?: string[];
-    faq?: Array<{ question: string; answer: string }>;
-    aboutUs?: string;
-    relatedServices?: string[];
-  };
+  location: ServiceLocation;
 }
 
-export default async function ServiceLocationPage({ params }: { params: { service: string, location: string } }) {
-  const serviceData: ServiceLocationData | null = await getServiceLocationData(params.service, params.location);
-  
-  if (!serviceData) {
-    return <ServiceNotFound />
-  }
-
-  return (
-    <div className="container mx-auto px-4 py-16 space-y-24">
-      <ServiceHeader serviceData={serviceData} />
-      <Introduction serviceData={serviceData} />
-      <WhyChooseUs serviceData={serviceData} />
-      <OurProcess serviceData={serviceData} />
-      <MaterialsAndFinishes serviceData={serviceData} />
-      <ElementsWeWorkOn serviceData={serviceData} />
-      <ProfessionalBenefits serviceData={serviceData} />
-      <BeforeAfterGallery serviceData={serviceData} />
-      <MaintenanceAndCare serviceData={serviceData} />
-      <CustomerTestimonials serviceData={serviceData} />
-      <FAQs serviceData={serviceData} />
-      <PricingGuide serviceData={serviceData} />
-      <EnvironmentalCommitment serviceData={serviceData} />
-      <ServiceAreas serviceData={serviceData} />
-      <ContactInformation />
-    </div>
-  )
-}
-
+// Helper components
 function ServiceNotFound() {
   return (
     <div className="container mx-auto px-4 py-16 text-center">
@@ -73,7 +68,7 @@ function ServiceHeader({ serviceData }: { serviceData: ServiceLocationData }) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div>
-        <h1 className="text-5xl font-bold mb-6">{serviceData.location.title}</h1>
+        <h1 className="text-5xl font-bold mb-6">{serviceData.location.title || serviceData.name}</h1>
         <p className="text-xl mb-8">{serviceData.location.localizedDescription || serviceData.description}</p>
         <QuoteModal>
           <Button size="lg" className="text-lg">Get a Free Quote</Button>
@@ -83,7 +78,7 @@ function ServiceHeader({ serviceData }: { serviceData: ServiceLocationData }) {
         {serviceData.image && (
           <Image 
             src={serviceData.image}
-            alt={serviceData.location.title}
+            alt={serviceData.location.title || serviceData.name}
             layout="fill"
             objectFit="cover"
           />
@@ -97,7 +92,7 @@ function Introduction({ serviceData }: { serviceData: ServiceLocationData }) {
   return (
     <section className="space-y-12">
       <div>
-        <h2 className="text-3xl font-semibold mb-6">Introduction to {serviceData.name} in {serviceData.location.title.split(' in ')[1]}</h2>
+        <h2 className="text-3xl font-semibold mb-6">Introduction to {serviceData.name} in {serviceData.location.title?.split(' in ')[1]}</h2>
         <p className="text-lg leading-relaxed">{serviceData.location.introduction || serviceData.introduction}</p>
       </div>
       {serviceData.benefits && serviceData.benefits.length > 0 && (
@@ -128,7 +123,7 @@ function WhyChooseUs({ serviceData }: { serviceData: ServiceLocationData }) {
   const whyChooseUsData = serviceData.location.whyChooseUs || serviceData.whyChooseUs;
   return (
     <section className="bg-gray-50 p-12 rounded-lg">
-      <h2 className="text-3xl font-semibold mb-8 text-center">Why Choose Our {serviceData.name} Service in {serviceData.location.title.split(' in ')[1]}</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Why Choose Our {serviceData.name} Service in {serviceData.location.title?.split(' in ')[1]}</h2>
       {whyChooseUsData && whyChooseUsData.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {whyChooseUsData.map((reason, index) => (
@@ -227,20 +222,22 @@ function ProfessionalBenefits({ serviceData }: { serviceData: ServiceLocationDat
     <section>
       <h2 className="text-3xl font-semibold mb-8 text-center">Benefits of Professional {serviceData.name}</h2>
       {serviceData.professionalBenefits && serviceData.professionalBenefits.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {serviceData.professionalBenefits.map((benefit, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle>{benefit.benefit}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>{benefit.description}</p>
+              <CardContent className="flex items-start p-6">
+                {/* eslint-disable-next-line react/jsx-no-undef */}
+                <CheckCircle className="h-6 w-6 text-green-500 mr-4 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{benefit.benefit}</h3>
+                  <p>{benefit.description}</p>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
       ) : (
-        <p className="text-center text-lg">Information on benefits of professional service is not available at the moment.</p>
+        <p className="text-center text-lg">Professional benefits information is not available at the moment.</p>
       )}
     </section>
   )
@@ -316,41 +313,45 @@ function CustomerTestimonials({ serviceData }: { serviceData: ServiceLocationDat
   const testimonials = serviceData.location.testimonials || serviceData.customerTestimonials;
   return (
     <section>
-      <h2 className="text-3xl font-semibold mb-8 text-center">Customer Testimonials in {serviceData.location.title.split(' in ')[1]}</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-center">What Our Customers Say</h2>
       {testimonials && testimonials.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <blockquote className="italic text-lg">&ldquo;{testimonial.text || testimonial.quote}&rdquo;</blockquote>
+                <blockquote className="italic text-lg">
+                  &ldquo;{('text' in testimonial ? testimonial.text : testimonial.quote)}&rdquo;
+                </blockquote>
                 <p className="mt-4 font-semibold text-right">- {testimonial.author}</p>
               </CardContent>
             </Card>
           ))}
         </div>
       ) : (
-        <p className="text-center text-lg">Customer testimonials are not available at the moment.</p>
-      )}    
+        <p className="text-center text-lg">No customer testimonials available at the moment.</p>
+      )}
     </section>
   )
 }
 
 function FAQs({ serviceData }: { serviceData: ServiceLocationData }) {
-  const faqs = serviceData.location.faq || serviceData.faq;
+  const faqData = serviceData.location.faq || serviceData.faq;
   return (
     <section>
-      <h2 className="text-3xl font-semibold mb-8 text-center">FAQs About {serviceData.name} in {serviceData.location.title.split(' in ')[1]}</h2>
-      {faqs && faqs.length > 0 ? (
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger>{item.question}</AccordionTrigger>
-              <AccordionContent>{item.answer}</AccordionContent>
-            </AccordionItem>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Frequently Asked Questions</h2>
+      {faqData && faqData.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {faqData.map((faq, index) => (
+            <Accordion key={index} type="single" collapsible>
+              <AccordionItem value={`item-${index}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            </Accordion>
           ))}
-        </Accordion>
+        </div>
       ) : (
-        <p className="text-center text-lg">FAQs are not available at the moment.</p>
+        <p className="text-center text-lg">No FAQs available at the moment.</p>
       )}
     </section>
   )
@@ -360,23 +361,13 @@ function PricingGuide({ serviceData }: { serviceData: ServiceLocationData }) {
   const pricingInfo = serviceData.location.pricingInfo || serviceData.pricingInfo;
   return (
     <section className="bg-gray-50 p-12 rounded-lg">
-      <h2 className="text-3xl font-semibold mb-8 text-center">Pricing Guide for {serviceData.location.title.split(' in ')[1]}</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Pricing Guide</h2>
       {pricingInfo ? (
-        <Card>
-          <CardHeader>
-            <CardTitle>Factors Affecting Cost</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="mb-6">{pricingInfo}</p>
-            <div className="text-center">
-              <QuoteModal>
-                <Button size="lg">Request a Personalized Quote</Button>
-              </QuoteModal>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="text-lg leading-relaxed">
+          <p>{pricingInfo}</p>
+        </div>
       ) : (
-        <p className="text-center text-lg">Pricing information for this location is not available at the moment.</p>
+        <p className="text-center text-lg">Pricing information is not available at the moment.</p>
       )}
     </section>
   )
@@ -385,26 +376,26 @@ function PricingGuide({ serviceData }: { serviceData: ServiceLocationData }) {
 function EnvironmentalCommitment({ serviceData }: { serviceData: ServiceLocationData }) {
   return (
     <section>
-      <h2 className="text-3xl font-semibold mb-8 text-center">Our Environmental Commitment in {serviceData.location.title.split(' in ')[1]}</h2>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Our Environmental Commitment</h2>
       {serviceData.environmentalCommitment ? (
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-start mb-6">
-              <Leaf className="mr-4 h-8 w-8 text-green-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Eco-Friendly Paint Options</h3>
-                <p>{serviceData.environmentalCommitment.ecoFriendlyOptions}</p>
-              </div>
-            </div>
-            <div className="flex items-start">
-              <Droplet className="mr-4 h-8 w-8 text-blue-500 flex-shrink-0" />
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Waste Reduction</h3>
-                <p>{serviceData.environmentalCommitment.wasteReduction}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Eco-Friendly Options</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>{serviceData.environmentalCommitment.ecoFriendlyOptions}</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Waste Reduction</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>{serviceData.environmentalCommitment.wasteReduction}</p>
+            </CardContent>
+          </Card>
+        </div>
       ) : (
         <p className="text-center text-lg">Environmental commitment information is not available at the moment.</p>
       )}
@@ -413,46 +404,86 @@ function EnvironmentalCommitment({ serviceData }: { serviceData: ServiceLocation
 }
 
 function ServiceAreas({ serviceData }: { serviceData: ServiceLocationData }) {
-  if (!serviceData.location.serviceAreas || serviceData.location.serviceAreas.length === 0) return null;
-
+  const serviceAreas = serviceData.location.serviceAreas || serviceData.locations.map(location => location.title);
   return (
     <section className="bg-gray-50 p-12 rounded-lg">
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-2xl">Service Areas in {serviceData.location.title.split(' in ')[1]}</CardTitle>
-          <CardDescription>We provide {serviceData.name} services in these areas</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {serviceData.location.serviceAreas.map((area) => (
-              <div key={area} className="flex items-center">
-                <MapPin className="mr-2 h-4 w-4" />
-                <span>{area}</span>
-              </div>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Service Areas</h2>
+      {serviceAreas && serviceAreas.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {serviceAreas.map((area, index) => (
+            <Card key={index} className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <MapPin className="mr-2 h-5 w-5 text-blue-500" />
+                  {area}
+                </CardTitle>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-lg">Service areas information is not available at the moment.</p>
+      )}
     </section>
   )
 }
 
-function ContactInformation() {
+function ContactInformationSection() {
   return (
     <section>
-      <Card className="bg-primary text-primary-foreground">
-        <CardHeader>
-          <CardTitle className="text-2xl">Ready to Transform Your Space?</CardTitle>
-          <CardDescription className="text-primary-foreground/80">Get in touch with us today for a free consultation and quote!</CardDescription>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="mt-1">
-            <QuoteModal>
-              <Button size="lg" variant="secondary">Get a Free Quote</Button>
-            </QuoteModal>
-          </div>
-        </CardContent>
-      </Card>
+      <h2 className="text-3xl font-semibold mb-8 text-center">Contact Information</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>Phone</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>+1 (123) 456-7890</p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle>Email</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>info@example.com</p>
+          </CardContent>
+        </Card>
+      </div>
     </section>
   )
+}
+
+// Main component
+export default async function ServiceLocationPage({ params }: { params: { service: string, location: string } }) {
+  const serviceData: ServiceLocationData | null = await getServiceLocationData(params.service, params.location);
+  
+  if (!serviceData) {
+    return <ServiceNotFound />
+  }
+
+  return (
+    <div className="container mx-auto px-4 py-16 space-y-24">
+      <ServiceHeader serviceData={serviceData} />
+      <Introduction serviceData={serviceData} />
+      <WhyChooseUs serviceData={serviceData} />
+      <OurProcess serviceData={serviceData} />
+      <MaterialsAndFinishes serviceData={serviceData} />
+      <ElementsWeWorkOn serviceData={serviceData} />
+      <ProfessionalBenefits serviceData={serviceData} />
+      <BeforeAfterGallery serviceData={serviceData} />
+      <MaintenanceAndCare serviceData={serviceData} />
+      <CustomerTestimonials serviceData={serviceData} />
+      <FAQs serviceData={serviceData} />
+      <PricingGuide serviceData={serviceData} />
+      <EnvironmentalCommitment serviceData={serviceData} />
+      <ServiceAreas serviceData={serviceData} />
+      <ContactInformationSection />
+    </div>
+  )
+}
+
+// Static params generation
+export async function generateStaticParams() {
+  return getAllServiceLocationSlugs()
 }

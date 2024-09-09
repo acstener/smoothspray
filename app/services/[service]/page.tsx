@@ -8,16 +8,13 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket } from 'lucide-react'
 import QuoteModal from '@/components/QuoteModal'
 
-export async function generateStaticParams() {
-  const services = await getAllServices()
-  return services.map((service) => ({ service: service.slug }))
-}
-
+// Make sure this interface is defined before it's used
 interface ServiceData {
   slug: string;
   name: string;
   description: string;
   image: string;
+  imageId: string;
   subServices: string[];
   introduction: string;
   benefits: Array<{ title: string; description: string }>;
@@ -32,11 +29,16 @@ interface ServiceData {
   customerTestimonials: Array<{ quote: string; author: string }>;
   pricingInfo: string;
   environmentalCommitment: { ecoFriendlyOptions: string; wasteReduction: string };
-  locations: Array<{ slug: string; title: string; }>;
+  locations: Array<{ slug: string; title: string }>;
+}
+
+export async function generateStaticParams() {
+  const services = await getAllServices()
+  return services.map((service: { slug: string }) => ({ service: service.slug }))
 }
 
 export default async function Service({ params }: { params: { service: string } }) {
-  const serviceData: ServiceData | null = await getServiceData(params.service);
+  const serviceData = await getServiceData(params.service) as ServiceData | null;
   
   if (!serviceData) {
     return <ServiceNotFound />

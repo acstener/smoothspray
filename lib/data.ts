@@ -56,6 +56,11 @@ interface ServiceData {
   environmentalCommitment: { ecoFriendlyOptions: string; wasteReduction: string };
 }
 
+// Add this interface
+interface ServiceLocationData extends ServiceData {
+  location: ServiceLocation;
+}
+
 export async function getServiceData(slug: string): Promise<ServiceData | null> {
   console.log("Fetching service data for slug:", slug);
   try {
