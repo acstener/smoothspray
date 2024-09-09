@@ -37,21 +37,15 @@ interface ServiceLocationData {
 }
 
 export default async function ServiceLocation({ params }: { params: { service: string, location: string } }) {
-  const data = getServiceLocationData(params.service, params.location) as ServiceLocationData | null
+  const data = await getServiceLocationData(params.service, params.location);
+  
+  if (!data) {
+    // Handle case when data is not found
+    return <div>Service location not found</div>;
+  }
+
   const mainImage = await getSpecificImage('abc123'); // Fixed main image
   const beforeAfterImages = await getRandomImage(`${params.service} before after`, 2); // Random before/after images
-
-  if (!data) {
-    return (
-      <div className="container mx-auto px-4 py-16 text-center">
-        <h1 className="text-4xl font-bold mb-4">Service or Location Not Found</h1>
-        <p className="mb-8">We couldn&apos;t find the specific service or location you&apos;re looking for. It may have been moved or doesn&apos;t exist.</p>
-        <Button asChild>
-          <Link href="/services">View All Services</Link>
-        </Button>
-      </div>
-    )
-  }
 
   return (
     <div className="container mx-auto px-4 py-16">

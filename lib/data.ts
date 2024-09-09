@@ -1,48 +1,67 @@
-import servicesData from '@/data/services.json';
-import locationsData from '@/data/locations.json';
-import serviceLocationData from '@/data/service-locations.json';
+import { promises as fs } from 'fs';
+import path from 'path';
 
-export function getAllServices() {
-  return servicesData;
-}
+const servicesPath = path.join(process.cwd(), 'data/services.json');
+const servicesDirectory = path.join(process.cwd(), 'data/services');
 
-export function getLocations() {
-  return locationsData;
-}
-
-export function getServiceData(slug: string) {
-  return servicesData.find(service => service.slug === slug);
-}
-
-export function getLocationData(slug: string) {
-  return locationsData.find(location => location.slug === slug);
-}
-
-export function getServiceLocationData(serviceSlug: string, locationSlug: string) {
-  const serviceData = serviceLocationData[serviceSlug];
-  if (serviceData && serviceData.locations) {
-    return serviceData.locations.find(location => location.slug === locationSlug);
+export async function getAllServices() {
+  try {
+    const content = await fs.readFile(servicesPath, 'utf8');
+    const services = JSON.parse(content);
+    return services;
+  } catch (error) {
+    console.error("Error in getAllServices:", error);
+    return [];
   }
-  return null;
 }
 
-export function getAllServiceLocationSlugs() {
+export async function getServiceData(slug: string) {
+  try {
+    const filePath = path.join(servicesDirectory, `${slug}.json`);
+    console.log("Attempting to read file:", filePath);
+    const content = await fs.readFile(filePath, 'utf8');
+    console.log("File content:", content);
+    return JSON.parse(content);
+  } catch (error) {
+    console.error(`Error getting service data for ${slug}:`, error);
+    // Return a default structure if the file doesn't exist
+    return {
+      slug: slug,
+      locations: []
+    };
+  }
+}
+
+export async function getServiceLocationData(serviceSlug: string, locationSlug: string) {
+  const serviceData = await getServiceData(serviceSlug);
+  return serviceData.locations.find(location => location.slug === locationSlug);
+}
+
+export async function getAllServiceLocationSlugs() {
+  const serviceFiles = await fs.readdir(servicesDirectory);
   const slugs = [];
-  for (const [serviceSlug, serviceData] of Object.entries(serviceLocationData)) {
-    if (serviceData.locations) {
-      for (const location of serviceData.locations) {
-        slugs.push({
-          service: serviceSlug,
-          location: location.slug
-        });
-      }
+  
+  for (const file of serviceFiles) {
+    const content = await fs.readFile(path.join(servicesDirectory, file), 'utf8');
+    const service = JSON.parse(content);
+    
+    for (const location of service.locations) {
+      slugs.push({
+        service: service.slug,
+        location: location.slug
+      });
     }
   }
+  
   return slugs;
 }
 
-export function getAllServicesAndLocations() {
-  return { services: servicesData, locations: locationsData };
+export async function getLocations() {
+  const content = await fs.readFile(locationsPath, 'utf8');
+  return JSON.parse(content);
 }
 
-// Add any other necessary data fetching functions
+export async function getLocationData(slug: string) {
+  const locations = await getLocations();
+  return locations.find(location => location.slug === slug);
+}
