@@ -12,14 +12,37 @@ export async function generateStaticParams() {
   return getAllServiceLocationSlugs()
 }
 
+interface ServiceLocationData {
+  title: string;
+  introduction: string;
+  localizedDescription: string;
+  whyChooseUs: string[];
+  recentProjects: Array<{
+    title: string;
+    description: string;
+  }>;
+  testimonials: Array<{
+    text: string;
+    author: string;
+  }>;
+  pricingInfo: string;
+  serviceAreas: string[];
+  faq: Array<{
+    question: string;
+    answer: string;
+  }>;
+  aboutUs: string;
+  relatedServices: string[];
+}
+
 export default function ServiceLocation({ params }: { params: { service: string, location: string } }) {
-  const data = getServiceLocationData(params.service, params.location)
+  const data = getServiceLocationData(params.service, params.location) as ServiceLocationData | null
 
   if (!data) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl font-bold mb-4">Service or Location Not Found</h1>
-        <p className="mb-8">We couldn't find the specific service or location you're looking for. It may have been moved or doesn't exist.</p>
+        <p className="mb-8">We couldn&apos;t find the specific service or location you&apos;re looking for. It may have been moved or doesn&apos;t exist.</p>
         <Button asChild>
           <Link href="/services">View All Services</Link>
         </Button>
@@ -44,7 +67,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Why Choose Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.whyChooseUs.map((reason: string, index: number) => (
+          {data.whyChooseUs.map((reason, index) => (
             <Card key={index}>
               <CardHeader>
                 <CardTitle className="text-lg">{reason}</CardTitle>
@@ -56,7 +79,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Recent Projects</h2>
-        {data.recentProjects.map((project: any, index: number) => (
+        {data.recentProjects.map((project, index) => (
           <Card key={index} className="mb-6">
             <CardHeader>
               <CardTitle>{project.title}</CardTitle>
@@ -93,7 +116,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Testimonials</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {data.testimonials.map((testimonial: any, index: number) => (
+          {data.testimonials.map((testimonial, index) => (
             <Card key={index}>
               <CardContent className="pt-6">
                 <div className="flex items-center mb-4">
@@ -101,7 +124,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <blockquote className="italic mb-2">"{testimonial.text}"</blockquote>
+                <blockquote className="italic mb-2">&quot;{testimonial.text}&quot;</blockquote>
                 <p className="font-semibold">- {testimonial.author}</p>
               </CardContent>
             </Card>
@@ -121,7 +144,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Service Areas</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {data.serviceAreas.map((area: string, index: number) => (
+          {data.serviceAreas.map((area, index) => (
             <div key={index} className="flex items-center">
               <MapPin className="w-5 h-5 mr-2 text-primary" />
               <span>{area}</span>
@@ -133,7 +156,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
         <Accordion type="single" collapsible className="w-full">
-          {data.faq.map((item: any, index: number) => (
+          {data.faq.map((item, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger>{item.question}</AccordionTrigger>
               <AccordionContent>{item.answer}</AccordionContent>
@@ -166,7 +189,7 @@ export default function ServiceLocation({ params }: { params: { service: string,
       <section>
         <h2 className="text-3xl font-bold mb-6">Related Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {data.relatedServices.map((service: string, index: number) => (
+          {data.relatedServices.map((service, index) => (
             <Button key={index} variant="outline" className="justify-start" asChild>
               <Link href={`/services/${service.toLowerCase().replace(' ', '-')}`}>
                 <ArrowRight className="mr-2 h-4 w-4" />

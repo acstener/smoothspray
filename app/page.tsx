@@ -84,7 +84,7 @@ export default function Component() {
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Let's bring your vision to life with our expert spray painting services.
+            Let&apos;s bring your vision to life with our expert spray painting services.
           </p>
           <Button asChild size="lg">
             <Link href="/get-a-quote">Request a Quote</Link>
@@ -100,7 +100,7 @@ export default function Component() {
             ].map((testimonial, index) => (
               <Card key={index}>
                 <CardContent className="pt-6">
-                  <p className="italic mb-4">"{testimonial.quote}"</p>
+                  <p className="italic mb-4">&quot;{testimonial.quote}&quot;</p>
                   <p className="font-semibold">{testimonial.name}</p>
                 </CardContent>
               </Card>

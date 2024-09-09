@@ -4,8 +4,7 @@ import Image from 'next/image'
 import { getServiceData, getLocations, getAllServices } from '@/lib/data'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket, Star } from 'lucide-react'
+import { ArrowRight, MapPin, Phone, Mail, CheckCircle, Droplet, Leaf, Clock, PaintBucket } from 'lucide-react'
 
 export async function generateStaticParams() {
   const services = getAllServices()
@@ -20,7 +19,7 @@ export default function Service({ params }: { params: { service: string } }) {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
-        <p className="mb-8">We couldn't find the service you're looking for. It may have been moved or doesn't exist.</p>
+        <p className="mb-8">We couldn&apos;t find the service you&apos;re looking for. It may have been moved or doesn&apos;t exist.</p>
         <Button asChild>
           <Link href="/services">View All Services</Link>
         </Button>
@@ -282,7 +281,7 @@ export default function Service({ params }: { params: { service: string } }) {
             <Card key={item}>
               <CardContent className="pt-6">
                 <blockquote className="italic">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris."
+                  &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.&quot;
                 </blockquote>
                 <p className="mt-2 font-semibold">- Customer {item}</p>
               </CardContent>
