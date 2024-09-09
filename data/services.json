@@ -4,6 +4,7 @@
     "name": "Kitchen Spraying",
     "description": "Transform your kitchen with our professional spraying service.",
     "image": "/images/services/kitchen-spraying.jpg",
+    "imageId": "ipcabm48ATw",
     "subServices": ["Cabinet Spraying", "Countertop Refinishing", "Appliance Painting"]
   },
   {
@@ -11,6 +12,7 @@
     "name": "Furniture Spraying",
     "description": "Revitalize your furniture with our expert spraying techniques.",
     "image": "/images/services/furniture-spraying.jpg",
+    "imageId": "abc123",
     "subServices": ["Wood Furniture", "Metal Furniture", "Plastic Furniture"]
   },
   {
@@ -18,6 +20,7 @@
     "name": "Outdoor Furniture and Spraying",
     "description": "Revitalize your outdoor spaces with our spraying service.",
     "image": "/images/services/outdoor-furniture.jpg",
+    "imageId": "GhimnIXlrBQ",
     "subServices": ["Garden Furniture", "Patio Sets", "Outdoor Structures"]
   },
   {
@@ -25,6 +28,7 @@
     "name": "Liquid Metal Finishes",
     "description": "Add a touch of luxury with our liquid metal finishing services.",
     "image": "/images/services/liquid-metal.jpg",
+    "imageId": "ghi789",
     "subServices": ["Metallic Wall Finishes", "Furniture Accents", "Decorative Elements"]
   },
   {
@@ -32,6 +36,7 @@
     "name": "Bosh Spraying",
     "description": "Experience the best in bosh spraying services.",
     "image": "/images/services/bosh-spraying.jpg",
+    "imageId": "jkl012",
     "subServices": ["Bosh Cabinets", "Bosh Countertops", "Bosh Appliances"]
   },
   {
@@ -39,6 +44,7 @@
     "name": "Wardrobe Spraying",
     "description": "Give your wardrobes a fresh, modern look with our spraying service.",
     "image": "/images/services/wardrobes.jpg",
+    "imageId": "mno345",
     "subServices": ["Built-in Wardrobes", "Freestanding Wardrobes", "Walk-in Closets"]
   },
   {
@@ -46,5 +52,6 @@
     "name": "Metal and Feature Walls",
     "description": "Create stunning feature walls with our metal and specialty finishes.",
     "image": "/images/services/feature-walls.jpg",
+    "imageId": "pqr678",
     "subServices": ["Metallic Wall Finishes", "Textured Walls", "Accent Walls"]
   }]

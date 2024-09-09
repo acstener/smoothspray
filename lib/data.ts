@@ -1,6 +1,6 @@
 import servicesData from '@/data/services.json';
 import locationsData from '@/data/locations.json';
-import serviceLocationData from '@/data/serviceLocations.json';
+import serviceLocationData from '@/data/service-locations.json';
 
 export function getAllServices() {
   return servicesData;
@@ -19,16 +19,26 @@ export function getLocationData(slug: string) {
 }
 
 export function getServiceLocationData(serviceSlug: string, locationSlug: string) {
-  return serviceLocationData.find(
-    item => item.serviceSlug === serviceSlug && item.locationSlug === locationSlug
-  );
+  const serviceData = serviceLocationData[serviceSlug];
+  if (serviceData && serviceData.locations) {
+    return serviceData.locations.find(location => location.slug === locationSlug);
+  }
+  return null;
 }
 
 export function getAllServiceLocationSlugs() {
-  return serviceLocationData.map(item => ({
-    service: item.serviceSlug,
-    location: item.locationSlug
-  }));
+  const slugs = [];
+  for (const [serviceSlug, serviceData] of Object.entries(serviceLocationData)) {
+    if (serviceData.locations) {
+      for (const location of serviceData.locations) {
+        slugs.push({
+          service: serviceSlug,
+          location: location.slug
+        });
+      }
+    }
+  }
+  return slugs;
 }
 
 export function getAllServicesAndLocations() {

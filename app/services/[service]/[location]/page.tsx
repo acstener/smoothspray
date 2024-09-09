@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getServiceLocationData, getAllServiceLocationSlugs } from '@/lib/data'
+import { getSpecificImage, getRandomImage } from '@/lib/unsplash'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -35,8 +36,10 @@ interface ServiceLocationData {
   relatedServices: string[];
 }
 
-export default function ServiceLocation({ params }: { params: { service: string, location: string } }) {
+export default async function ServiceLocation({ params }: { params: { service: string, location: string } }) {
   const data = getServiceLocationData(params.service, params.location) as ServiceLocationData | null
+  const mainImage = await getSpecificImage('abc123'); // Fixed main image
+  const beforeAfterImages = await getRandomImage(`${params.service} before after`, 2); // Random before/after images
 
   if (!data) {
     return (
@@ -52,6 +55,15 @@ export default function ServiceLocation({ params }: { params: { service: string,
 
   return (
     <div className="container mx-auto px-4 py-16">
+      {mainImage && (
+        <Image 
+          src={mainImage.urls.regular}
+          alt={data.title}
+          width={600}
+          height={400}
+          className="rounded-lg object-cover w-full h-[400px]"
+        />
+      )}
       <h1 className="text-4xl font-bold mb-6">{data.title}</h1>
       <p className="text-xl mb-8">{data.introduction}</p>
 
@@ -87,26 +99,32 @@ export default function ServiceLocation({ params }: { params: { service: string,
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="relative h-64">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="Before" 
-                    layout="fill" 
-                    objectFit="cover" 
-                    className="rounded-lg"
-                  />
-                  <Badge className="absolute top-2 left-2">Before</Badge>
-                </div>
-                <div className="relative h-64">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="After" 
-                    layout="fill" 
-                    objectFit="cover" 
-                    className="rounded-lg"
-                  />
-                  <Badge className="absolute top-2 left-2">After</Badge>
-                </div>
+                {beforeAfterImages && Array.isArray(beforeAfterImages) && beforeAfterImages.length === 2 ? (
+                  <>
+                    <div className="relative h-64">
+                      <Image 
+                        src={beforeAfterImages[0].urls.regular} 
+                        alt="Before" 
+                        width={300}
+                        height={200}
+                        className="rounded-lg object-cover"
+                      />
+                      <Badge className="absolute top-2 left-2">Before</Badge>
+                    </div>
+                    <div className="relative h-64">
+                      <Image 
+                        src={beforeAfterImages[1].urls.regular} 
+                        alt="After" 
+                        width={300}
+                        height={200}
+                        className="rounded-lg object-cover"
+                      />
+                      <Badge className="absolute top-2 left-2">After</Badge>
+                    </div>
+                  </>
+                ) : (
+                  <p>Images not available</p>
+                )}
               </div>
             </CardContent>
           </Card>
