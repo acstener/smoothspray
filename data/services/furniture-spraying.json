@@ -148,6 +148,262 @@
       "name": "Bromley",
       "title": "Furniture Spraying Services in Bromley",
       "introduction": "Transform your Bromley home or office with our expert furniture spraying services. Our skilled team brings years of experience and cutting-edge techniques to breathe new life into your furniture. Whether you're looking to update a single piece or refinish an entire set, our professional spraying solutions offer a cost-effective and stunning alternative to buying new.",
+      "localizedDescription": "In Bromley, we specialize in updating furniture for both modern homes and period properties, ensuring your pieces complement your space's unique character.",
+      "description": "Serving the Bromley area with top-quality spraying services."
+    },
+    {
+      "slug": "beckenham",
+      "name": "Beckenham",
+      "title": "Furniture Spraying Services in Beckenham",
+      "introduction": "Revitalize your Beckenham home or office with our professional furniture spraying solutions. Our expert team combines local knowledge with industry-leading techniques to transform your furniture pieces, enhancing your space's overall appeal.",
+      "localizedDescription": "Our Beckenham service caters to a diverse range of furniture styles, from antique pieces to modern designs, offering bespoke solutions for every home and office."
+    },
+    {
+      "slug": "croydon",
+      "name": "Croydon",
+      "title": "Furniture Spraying Services in Croydon",
+      "introduction": "Elevate your Croydon home or office with our professional furniture spraying solutions. Our experienced team brings innovative techniques and local expertise to every project, ensuring stunning results that reflect the diverse character of Croydon interiors.",
+      "localizedDescription": "In Croydon, we excel in refreshing furniture for a wide range of properties, from Victorian homes to modern apartments and bustling offices."
+    },
+    {
+      "slug": "orpington",
+      "name": "Orpington",
+      "title": "Furniture Spraying Services in Orpington",
+      "introduction": "Transform your Orpington interiors with our expert furniture spraying services. We deliver stunning results that enhance your property's value and aesthetic appeal, breathing new life into your cherished furniture pieces.",
+      "localizedDescription": "Our Orpington team specializes in revitalizing furniture for both residential and commercial properties, using high-quality, durable finishes."
+    },
+    {
+      "slug": "hayes",
+      "name": "Hayes",
+      "title": "Furniture Spraying Services in Hayes",
+      "introduction": "Refresh your Hayes home or office with our professional furniture spraying service. We offer a cost-effective solution to transform your furniture, enhancing your space's overall look and feel.",
+      "localizedDescription": "In Hayes, we provide custom colour matching and finishing options to ensure your newly sprayed furniture complements your existing decor perfectly."
+    },
+    {
+      "slug": "penge",
+      "name": "Penge",
+      "title": "Furniture Spraying Services in Penge",
+      "introduction": "Revitalize your Penge interiors with our expert furniture spraying. We bring new life to old and worn furniture, enhancing your property's overall appearance and value.",
+      "localizedDescription": "Our Penge service caters to all types of furniture, offering a wide range of colours and finishes to suit your preferences and style."
+    },
+    {
+      "slug": "sydenham",
+      "name": "Sydenham",
+      "title": "Furniture Spraying Services in Sydenham",
+      "introduction": "Upgrade your Sydenham property with our professional furniture spraying. We offer a quick and affordable way to transform your furniture and refresh your living or working space.",
+      "localizedDescription": "In Sydenham, we specialize in rejuvenating furniture for both period and modern homes, ensuring a perfect match for your property's style."
+    },
+    {
+      "slug": "crystal-palace",
+      "name": "Crystal Palace",
+      "title": "Furniture Spraying Services in Crystal Palace",
+      "introduction": "Enhance your Crystal Palace home or office with our expert furniture spraying service. We provide a cost-effective solution to refresh your furniture and revitalize your interiors.",
+      "localizedDescription": "Our Crystal Palace team offers bespoke colour solutions to complement the area's diverse architectural styles, from Victorian to contemporary."
+    },
+    {
+      "slug": "south-norwood",
+      "name": "South Norwood",
+      "title": "Furniture Spraying Services in South Norwood",
+      "introduction": "Transform your South Norwood property with our professional furniture spraying. We breathe new life into old and worn furniture, boosting your home or office's overall appeal.",
+      "localizedDescription": "In South Norwood, we work on all types of furniture, offering a range of finishes to suit both traditional and modern interiors."
+    },
+    {
+      "slug": "elmers-end",
+      "name": "Elmers End",
+      "title": "Furniture Spraying Services in Elmers End",
+      "introduction": "Revitalize your Elmers End home or office with our expert furniture spraying service. We offer an affordable way to upgrade your furniture and enhance your property's interior.",
+      "localizedDescription": "Our Elmers End team specializes in transforming furniture for residential and commercial properties, using high-quality, durable paints for long-lasting results."
+    },
+    {
+      "slug": "chislehurst",
+      "name": "Chislehurst",
+      "title": "Furniture Spraying Services in Chislehurst",
+      "introduction": "Enhance your Chislehurst property with our professional furniture spraying. We provide a quick and effective solution to refresh your furniture and revitalize your living or working space.",
+      "localizedDescription": "In Chislehurst, we offer custom colour matching to ensure your newly sprayed furniture complements your home's unique character."
+    },
+    {
+      "slug": "biggin-hill",
+      "name": "Biggin Hill",
+      "title": "Furniture Spraying Services in Biggin Hill",
+      "introduction": "Upgrade your Biggin Hill home or office with our expert furniture spraying service. We transform old and worn furniture into stunning pieces that enhance your property's overall aesthetic.",
+      "localizedDescription": "Our Biggin Hill team caters to both residential and commercial properties, offering a wide range of colours and finishes to suit your needs."
+    },
+    {
+      "slug": "addington",
+      "name": "Addington",
+      "title": "Furniture Spraying Services in Addington",
+      "introduction": "Revitalize your Addington property with our professional furniture spraying. We offer a cost-effective way to enhance your furniture and improve your home or office's overall appeal.",
+      "localizedDescription": "In Addington, we specialize in rejuvenating furniture for various property types, ensuring a perfect match for your home or office's style."
+    },
+    {
+      "slug": "shirley",
+      "name": "Shirley",
+      "title": "Furniture Spraying Services in Shirley",
+      "introduction": "Transform your Shirley home or office with our expert furniture spraying service. We provide an affordable solution to refresh your furniture and revitalize your interiors.",
+      "localizedDescription": "Our Shirley team offers bespoke colour solutions to complement both modern and traditional interiors in the area."
+    },
+    {
+      "slug": "coney-hall",
+      "name": "Coney Hall",
+      "title": "Furniture Spraying Services in Coney Hall",
+      "introduction": "Enhance your Coney Hall property with our professional furniture spraying. We breathe new life into old and worn furniture, boosting your home or office's overall appearance.",
+      "localizedDescription": "In Coney Hall, we work on all types of furniture, providing tailored solutions to match your property's unique character."
+    },
+    {
+      "slug": "shortlands",
+      "name": "Shortlands",
+      "title": "Furniture Spraying Services in Shortlands",
+      "introduction": "Upgrade your Shortlands home or office with our expert furniture spraying service. We offer a quick and effective way to transform your furniture and enhance your property's interior.",
+{
+  "slug": "furniture-spraying",
+  "name": "Furniture Spraying and Refinishing",
+  "description": "Revitalize your furniture with our expert spraying service - the affordable way to transform your home and office pieces.",
+  "image": "https://nsdr.b-cdn.net/Project%20pics/bilal-mansuri-neyTn2TcyiY-unsplash%20(1)%201%202.png",
+  "imageId": "furniture-spraying-service",
+  "subServices": [
+    "Wooden Furniture Spraying",
+    "Metal Furniture Refinishing",
+    "Kitchen Cabinet Spraying"
+  ],
+  "introduction": "Breathe new life into your furniture without the expense of replacement. Our professional furniture spraying service offers a cost-effective solution to rejuvenate your home and office pieces. Using high-quality paints and finishes, we transform tired, worn furniture into stunning focal points that look brand new.",
+  "benefits": [
+    {
+      "title": "Affordable Furniture Makeover",
+      "description": "Achieve a stunning transformation of your furniture at a fraction of the cost of buying new pieces."
+    },
+    {
+      "title": "Enhance Your Living and Working Spaces",
+      "description": "Professionally refinished furniture can significantly improve the look and feel of any room in your home or office."
+    },
+    {
+      "title": "Durable, Long-Lasting Finish",
+      "description": "Our specialized spraying techniques provide a smooth, durable finish that withstands daily use and looks great for years to come."
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "title": "Local Experts in Furniture Refinishing",
+      "description": "Our team of skilled professionals has years of experience in furniture spraying and refinishing, serving UK homeowners and businesses with pride."
+    },
+    {
+      "title": "Premium, Eco-Friendly Materials",
+      "description": "We use top-quality, low-VOC paints and finishes that are both environmentally friendly and built to last."
+    },
+    {
+      "title": "Convenient On-Site or Workshop Service",
+      "description": "We offer both on-site spraying for larger pieces and a workshop service for smaller items, ensuring minimal disruption to your daily life."
+    },
+    {
+      "title": "100% Satisfaction Guarantee",
+      "description": "We stand behind our work with a comprehensive warranty and a commitment to your complete satisfaction."
+    }
+  ],
+  "process": [
+    "Step 1: Thorough cleaning and preparation of all surfaces to ensure optimal paint adhesion.",
+    "Step 2: Application of high-quality paint or finish using state-of-the-art spraying equipment for a flawless result.",
+    "Step 3: Meticulous inspection and touch-ups to guarantee a perfect finish that meets our rigorous quality standards."
+  ],
+  "materialsAndFinishes": [
+    {
+      "title": "Premium Furniture Paints",
+      "description": "We offer a wide range of high-quality paints, including specialized coatings for wood, metal, and plastic furniture."
+    },
+    {
+      "title": "Custom Colour Matching",
+      "description": "Our colour matching service ensures your refinished furniture perfectly complements your existing decor."
+    },
+    {
+      "title": "Durable Clear Coats",
+      "description": "We apply tough clear coats to protect your furniture's new finish, ensuring longevity and easy maintenance."
+    }
+  ],
+  "beforeAfterGallery": [
+    {
+      "before": "",
+      "after": "",
+      "description": "Stunning transformation of a dated oak dining set: From tired and worn to sleek and modern."
+    },
+    {
+      "before": "",
+      "after": "",
+      "description": "Complete makeover of metal office furniture: Restored to a professional, contemporary finish."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does your furniture spraying process take?",
+      "answer": "The process typically takes 3-5 days, depending on the size and complexity of the furniture. We work efficiently to minimize disruption while ensuring a high-quality finish."
+    },
+    {
+      "question": "Can you match my desired colour scheme?",
+      "answer": "Absolutely! Our colour matching expertise allows us to recreate any shade you desire or match existing elements in your space for a cohesive look."
+    },
+    {
+      "question": "What kind of warranty do you offer on your furniture refinishing services?",
+      "answer": "We stand behind our work with a comprehensive 2-year warranty on all our furniture spraying and refinishing services, giving you peace of mind in your investment."
+    },
+    {
+      "question": "How should I prepare my furniture for the refinishing project?",
+      "answer": "For on-site services, simply clear the area around the furniture. For workshop services, we'll provide guidance on how to safely prepare your items for transport. Our team handles all the necessary cleaning and preparation of the pieces."
+    }
+  ],
+  "elementsWeSpray": [
+    {
+      "element": "Dining Tables and Chairs",
+      "description": "Transform your dining set with our expert spraying service, achieving a smooth, durable finish that looks brand new and withstands daily use."
+    },
+    {
+      "element": "Bedroom Furniture",
+      "description": "Our innovative refinishing techniques can update wooden wardrobes, dressers, and bed frames, giving your bedroom a fresh, stylish look."
+    },
+    {
+      "element": "Office Desks and Cabinets",
+      "description": "Revitalize your office furniture with our specialized painting service, making old desks and filing cabinets look professional and modern."
+    },
+    {
+      "element": "Kitchen Cabinets and Islands",
+      "description": "We meticulously refinish kitchen cabinets and islands to create a cohesive, beautifully finished kitchen space."
+    }
+  ],
+  "professionalBenefits": [
+    {
+      "benefit": "Expert Colour Consultation",
+      "description": "Our professional colour experts will help you choose the perfect palette to achieve your dream look, whether you're updating a single piece or an entire room."
+    },
+    {
+      "benefit": "Flawless, Factory-Like Finish",
+      "description": "Our advanced spraying techniques and equipment ensure a smooth, even finish free of brush strokes or imperfections, rivaling the look of brand-new furniture."
+    },
+    {
+      "benefit": "Comprehensive Project Management",
+      "description": "From initial consultation to final inspection, we handle every aspect of your furniture transformation, ensuring a stress-free experience and stunning results."
+    }
+  ],
+  "maintenanceAndCare": {
+    "description": "To preserve your newly refinished furniture, we recommend regular dusting and cleaning with gentle, non-abrasive products. Avoid placing hot or wet items directly on the surface. With proper care, your furniture's new finish will maintain its beauty and durability for many years to come.",
+    "longevity": "Our professional-grade finishes are designed to last. With proper maintenance, you can expect your refinished furniture to look great for 5-7 years or more, depending on use and care."
+  },
+  "customerTestimonials": [
+    {
+      "quote": "The work was fast and efficient. All aspects of the job were catered for and completed with professionalism",
+      "author": "Mr Mark Scott, Bromley"
+    },
+    {
+      "quote": "We would have no hesitation in highly recommending Coutts Building . We would also be happy for anyone to come and look at the work they have done for us.",
+      "author": "J Lane, Croydon"
+    }
+  ],
+  "pricingInfo": "For our professional furniture spraying and refinishing services, please request a quote. While prices may vary based on the size, complexity, and number of pieces, we pride ourselves on offering premium results at a fraction of the cost of buying new furniture. We also offer flexible payment options to make your furniture makeover more accessible.",
+  "environmentalCommitment": {
+    "ecoFriendlyOptions": "We're committed to environmental responsibility, offering a selection of low-VOC and eco-friendly paint options that are safe for your home and the planet.",
+    "wasteReduction": "Our refinishing process significantly reduces landfill waste compared to replacing furniture. We also practice strict waste reduction, recycling unused materials and properly disposing of any hazardous substances."
+  },
+  "locations": [
+    {
+      "slug": "bromley",
+      "name": "Bromley",
+      "title": "Furniture Spraying Services in Bromley",
+      "introduction": "Transform your Bromley home or office with our expert furniture spraying services. Our skilled team brings years of experience and cutting-edge techniques to breathe new life into your furniture. Whether you're looking to update a single piece or refinish an entire set, our professional spraying solutions offer a cost-effective and stunning alternative to buying new.",
       "localizedDescription": "In Bromley, we specialize in updating furniture for both modern homes and period properties, ensuring your pieces complement your space's unique character."
     },
     {

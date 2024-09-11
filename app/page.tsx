@@ -20,7 +20,7 @@ export default async function Home() {
     <main className="container mx-auto px-4 py-16">
       <section className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-8">
         <div className="lg:w-1/2">
-          <h1 className="text-4xl font-bold mb-4">Transform Your Space with Expert Spray Painting</h1>
+          <h1 className="text-4xl font-bold mb-4">Transform Your Space with Expert Spray Painting in Bromley</h1>
           <p className="text-xl text-muted-foreground mb-6">
             With over 30 years of experience in general contracting, we bring unparalleled expertise to every painting project.
           </p>
