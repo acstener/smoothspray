@@ -22,7 +22,7 @@ export default async function Home() {
         <div className="lg:w-1/2">
           <h1 className="text-4xl font-bold mb-4">Transform Your Space with Expert Spray Painting in Bromley</h1>
           <p className="text-xl text-muted-foreground mb-6">
-            With over 30 years of experience in general contracting, we bring unparalleled expertise to every painting project.
+            With over 31 years of experience in general contracting, we bring unparalleled expertise to every painting project.
           </p>
           <QuoteModal>
             <Button size="lg">Get a Free Quote</Button>
