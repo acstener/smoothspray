@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GoogleTags from '@/components/GoogleTags';
+import WhatsAppChat from '@/components/WhatsAppChat';
 import '@/app/globals.css';
 
 export default function RootLayout({
@@ -20,6 +21,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppChat />
       </body>
     </html>
   )

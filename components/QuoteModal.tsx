@@ -27,7 +27,13 @@ export default function QuoteModal({ children }: { children: React.ReactNode }) 
           <a
             href={`tel:${phoneNumber}`}
             className="text-xl font-bold text-primary hover:underline flex items-center justify-center"
-            onClick={() => setIsOpen(false)}
+            onClick={() => {
+              // Track phone conversion
+              if (typeof window !== 'undefined' && typeof (window as Window & { gtag?: (...args: unknown[]) => void }).gtag === 'function') {
+                (window as Window & { gtag: (...args: unknown[]) => void }).gtag('event', 'conversion', {'send_to': 'AW-16911810148/o4jWCJGN2agaEOT8loA_'});
+              }
+              setIsOpen(false);
+            }}
           >
             <Phone className="mr-2 h-5 w-5" />
             {phoneNumber}

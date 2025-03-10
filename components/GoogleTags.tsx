@@ -14,6 +14,9 @@ export default function GoogleTags() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-16911810148');
+          gtag('config', 'AW-16911810148/o4jWCJGN2agaEOT8loA_', {
+            'phone_conversion_number': '+44 7860 226411'
+          });
         `}
       </Script>
       
