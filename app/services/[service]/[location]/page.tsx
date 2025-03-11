@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Metadata } from 'next'
 import Image from 'next/image'
 import { getServiceLocationData, getAllServiceLocationSlugs } from '@/lib/data'
 import { Button } from "@/components/ui/button"
@@ -452,6 +453,48 @@ function ContactInformationSection() {
       </div>
     </section>
   )
+}
+
+// Metadata generation
+export async function generateMetadata(
+  { params }: { params: { service: string; location: string } }
+): Promise<Metadata> {
+  const serviceLocationData = await getServiceLocationData(params.service, params.location);
+  if (!serviceLocationData) {
+    return {};
+  }
+
+  const formattedLocation = params.location
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
+  const serviceUrl = `https://smoothspray.co.uk/services/${params.service}`;
+  const currentUrl = `https://smoothspray.co.uk/services/${params.service}/${params.location}`;
+
+  return {
+    title: `${serviceLocationData.name} Services in ${formattedLocation} | Smooth Spray`,
+    description: `Professional ${serviceLocationData.name.toLowerCase()} services in ${formattedLocation}. Local expertise, high-quality results, and competitive pricing from Smooth Spray.`,
+    alternates: {
+      canonical: serviceUrl,
+    },
+    openGraph: {
+      title: `${serviceLocationData.name} Services in ${formattedLocation} | Smooth Spray`,
+      description: `Professional ${serviceLocationData.name.toLowerCase()} services in ${formattedLocation}. Local expertise, high-quality results, and competitive pricing from Smooth Spray.`,
+      url: serviceUrl,
+      siteName: 'Smooth Spray',
+      locale: 'en_GB',
+      type: 'website',
+      images: serviceLocationData.image ? [
+        {
+          url: serviceLocationData.image,
+          width: 1200,
+          height: 630,
+          alt: `${serviceLocationData.name} Services in ${formattedLocation}`,
+        },
+      ] : [],
+    },
+  };
 }
 
 // Main component
