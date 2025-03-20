@@ -1,3 +1,4 @@
+import { MetadataRoute } from 'next'
 import { getAllServices } from '@/lib/data';
 
 const BASE_URL = 'http://smoothspray.co.uk';
@@ -8,7 +9,7 @@ interface Service {
   // Add other properties if needed
 }
 
-export default async function sitemap() {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const services = await getAllServices();
   const locations = [
     'bromley', 'beckenham', 'croydon', 'orpington', 'hayes', 'penge', 'sydenham',
@@ -27,29 +28,23 @@ export default async function sitemap() {
   ].map(route => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date().toISOString(),
-    // Each static page is its own canonical URL
-    alternates: {
-      canonical: `${BASE_URL}${route}`
-    }
+    changeFrequency: 'monthly',
+    priority: route === '' ? 1 : 0.8
   }));
 
   const servicePages = services.map((service: Service) => ({
     url: `${BASE_URL}/services/${service.slug}`,
     lastModified: new Date().toISOString(),
-    // Service pages are their own canonical URLs
-    alternates: {
-      canonical: `${BASE_URL}/services/${service.slug}`
-    }
+    changeFrequency: 'monthly',
+    priority: 0.8
   }));
 
   const locationPages = services.flatMap((service: Service) =>
     locations.map(location => ({
       url: `${BASE_URL}/services/${service.slug}/${location}`,
       lastModified: new Date().toISOString(),
-      // Location pages have their parent service page as canonical URL
-      alternates: {
-        canonical: `${BASE_URL}/services/${service.slug}`
-      }
+      changeFrequency: 'monthly',
+      priority: 0.6
     }))
   );
 
