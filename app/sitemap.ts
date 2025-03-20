@@ -21,20 +21,35 @@ export default async function sitemap() {
     '',
     '/services',
     '/about',
+    '/blog',
+    '/faq',
+    '/get-a-quote'
   ].map(route => ({
     url: `${BASE_URL}${route}`,
     lastModified: new Date().toISOString(),
+    // Each static page is its own canonical URL
+    alternates: {
+      canonical: `${BASE_URL}${route}`
+    }
   }));
 
   const servicePages = services.map((service: Service) => ({
     url: `${BASE_URL}/services/${service.slug}`,
     lastModified: new Date().toISOString(),
+    // Service pages are their own canonical URLs
+    alternates: {
+      canonical: `${BASE_URL}/services/${service.slug}`
+    }
   }));
 
   const locationPages = services.flatMap((service: Service) =>
     locations.map(location => ({
       url: `${BASE_URL}/services/${service.slug}/${location}`,
       lastModified: new Date().toISOString(),
+      // Location pages have their parent service page as canonical URL
+      alternates: {
+        canonical: `${BASE_URL}/services/${service.slug}`
+      }
     }))
   );
 
